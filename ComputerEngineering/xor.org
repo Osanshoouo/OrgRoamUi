@@ -1,0 +1,11 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       4094bce5-975f-417d-94ed-11cd0a099add
+:END:
+#+title: XOR
+#+filetags: :@computerEngineering:@boat:
+* XOR
+
+Exclusive OR is not a gate but rather a [[id:1553ba21-3f8a-4341-a29c-1afe1d799d64][Sum-Of-Products Expression]]
+

@@ -1,0 +1,7 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ID:       73f5d668-2d82-4d7a-b035-0a56d8ec302b
+:END:
+#+title: DNF
+#+filetags: :@computerEngineering:@boat:
+

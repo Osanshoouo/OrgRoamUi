@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       e333d7fd-012c-4e8a-bc32-37f952aa8757
+:NOTE_LEVEL: 1
+:END:
+#+title: RAM
+#+filetags: :@computerEngineering:@boat:
+
+Ram (Random Access Memory) stores data that the [[id:7a8e596a-08dd-48fe-a4e8-0eeebfdd44c0][CPU]] is actively using. 

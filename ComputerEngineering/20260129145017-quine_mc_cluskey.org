@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       3610a835-3ad2-4e23-a317-9a557b49034e
+:NOTE_LEVEL: 1
+:END:
+#+title: Quine & Mc Cluskey
+#+filetags: :@computerEngineering:@boat:
+

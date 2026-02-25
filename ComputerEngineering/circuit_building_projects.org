@@ -1,0 +1,18 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       f29eb6d0-f354-4d55-9abc-1c286ddbe732
+:END:
+#+title: Circuit Building Projects
+#+filetags: :@computerEngineering:@boat:
+
+* Circuit Building Projects                                :@circuitBuilding:
+** Building an 4bit-Adder from scratch
+:PROPERTIES:
+:ID:       bbcdcc6f-2c98-49c6-a038-49bfd0650a1a
+:END:
+:LOGBOOK:
+CLOCK: [2026-02-22 Sun 08:44]--[2026-02-22 Sun 12:02] =>  3:18
+:END:
+*** Upgrade the Adder to have memory
+** Building a [[id:80e29d90-e572-44b2-82f3-75e797115bd4][7-Segment Display Driver]]

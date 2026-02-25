@@ -1,0 +1,431 @@
+:PROPERTIES:
+:ID:       03d38ff5-0376-4663-9c16-e4586997680a
+:END:
+#+title: Intermation
+
+* Computer Organization and Design Fundamentals  :@computerEngineering:@gti:
+** Ep 001: Pulse Trains - Identifying the Components of a Digital Signal
+ * [[id:bb6bdf3e-5704-4261-bec7-d708ad46c5b4][Pulse Trains]]
+   
+** Ep 002: Duty Cycle and Pulse Width Modulation How to Dim an LED
+:LOGBOOK:
+CLOCK: [2026-02-17 Tue 12:23]--[2026-02-17 Tue 12:43] =>  0:20
+:END:
+ * [[id:e4fab5e1-8e10-4f72-9625-3ae32f0f6dca][Duty Cycle]]
+ * [[id:aff081ec-fb00-49db-a1ac-a82321922584][LED]]
+
+** Ep 003: Intro to Binary - How Computers Count without Fingers
+:LOGBOOK:
+CLOCK: [2026-02-17 Tue 12:45]--[2026-02-17 Tue 12:54] =>  0:09
+:END:
+ * [[id:f976f2f5-2a3f-4771-994e-df6f4960c9dc][Charles Babbage]]
+ * [[id:ec8577b8-eba4-4b9a-9f81-e652d32abeba][Base60 Counting]]
+ * [[id:dcea4bcc-9c0f-4255-87f5-15deeab8761b][Transistor]]
+
+** Ep 004: Binary to Decimal Conversion
+:LOGBOOK:
+CLOCK: [2026-02-17 Tue 12:56]--[2026-02-17 Tue 13:00] =>  0:04
+:END:
+
+ * Unsigned binary 0 \to 2^n - 1
+ * [[id:45a94c6c-8cf0-4b8e-bdee-c92f0b0444bb][Hornerschema]]
+
+** Ep 005: Shifting Bits to Multiply, Divide, and Convert
+:LOGBOOK:
+CLOCK: [2026-02-17 Tue 13:00]--[2026-02-17 Tue 13:11] =>  0:11
+:END:
+ * [[id:93faea5e-d453-42e5-8c6c-3612440d288a][Bit Arithmatics]]
+
+** Ep 006: Hexadecimal Conversion
+:LOGBOOK:
+CLOCK: [2026-02-17 Tue 13:11]--[2026-02-17 Tue 13:29] =>  0:18
+:END:
+
+ * a nibble is 4 bits
+ * a crumb is 2 bits
+ * back in the day, computers store bits as group of 3 (or multiples of 3) bits
+   * however its now of course more common do 4 (and its multiples) bit groups
+     * this gives you hexadecimal, which also groups together into bytes
+     * (1 hexadecimal group is a nibbl, 2 nibbles are a byte)
+
+ * declaring an variable in a programming language tells the compture how much memory to reserve and what kind of encoding this will have
+ * for example int will reserve 32 bits in most programming languages
+ * Binary is really hard to read
+   * for example 000100011110100001000011010111100
+   * partitioning the number from the LSB to the MSB in
+     * 3 bit groups
+       * will give you octal (base8)
+	 * since 3 bits can be 8 different values
+	 * 0 - 7
+     * 4 bit groups
+       * will give you hexadecimal
+	 * since 4 bits can be 16 different values
+	 * 0 - 15
+
+ * [[id:d71d50a1-6249-4c6d-98cb-2d09ed99eb33][Hexadecimal]]
+
+** Ep 007: Packed Binary Coded Decimal
+:LOGBOOK:
+CLOCK: [2026-02-17 Tue 13:31]--[2026-02-17 Tue 13:44] =>  0:13
+:END:
+ * [[id:aaef1033-70ff-4d8f-867a-2514b0848717][Binary-Encoded Decimal]]
+
+** Ep 008: Introduction to Analog to Digital Conversion
+:LOGBOOK:
+CLOCK: [2026-02-17 Tue 13:44]--[2026-02-17 Tue 13:58] =>  0:14
+:END:
+ * [[id:f3637cc6-88b9-49a6-9652-88fe2f2ace44][Digital vs Analog]]
+
+** Ep 009: Analog to Digital Conversion Example
+:LOGBOOK:
+CLOCK: [2026-02-17 Tue 13:58]--[2026-02-17 Tue 14:04] =>  0:06
+:END:
+** Ep 010: The Effects of Sampling on Analog Data
+:LOGBOOK:
+CLOCK: [2026-02-17 Tue 15:47]--[2026-02-17 Tue 15:58] =>  0:11
+:END:
+
+ * [[id:0033ac3d-9768-4862-a9f9-babf178edf5a][Sampling]]
+
+** Ep 011: Introduction to Gray Code
+:LOGBOOK:
+CLOCK: [2026-02-17 Tue 15:58]--[2026-02-17 Tue 16:19] =>  0:21
+:END:
+
+ * [[id:627f578f-42ef-442f-beae-0df4a55c38f4][Gray Code]]
+
+** Ep 012: Addition and Subtraction in Binary
+:LOGBOOK:
+CLOCK: [2026-02-17 Tue 16:19]--[2026-02-17 Tue 16:24] =>  0:05
+:END:
+
+ * [[id:ef2c7156-ea4e-4c03-be0a-99792297fda4][Arithmatics in Binary]]
+
+** Ep 013: Basics of Complement Notation
+:LOGBOOK:
+CLOCK: [2026-02-17 Tue 16:24]--[2026-02-17 Tue 16:37] =>  0:13
+:END:
+ * [[id:a8aae623-e94b-4130-9174-467efc7278a8][Mathematical Complements]]
+ * [[id:35230ea4-4c3a-46ba-8e55-484688702c48][Two's complement]]
+
+** Ep 014: Two's Complement Notation Example and Shortcut
+:LOGBOOK:
+CLOCK: [2026-02-18 Wed 15:05]--[2026-02-18 Wed 15:20] =>  0:15
+:END:
+** Ep 015: Overflow in Binary Integer Addition
+:LOGBOOK:
+CLOCK: [2026-02-18 Wed 15:20]--[2026-02-18 Wed 15:46] =>  0:26
+:END:
+ * [[id:0f284dec-e260-4fbd-b41e-efaf53199f8b][Overflow in Binary Integer Addition]]
+** Ep 016: Offset or Biased N Binary Representation
+:LOGBOOK:
+CLOCK: [2026-02-18 Wed 15:46]--[2026-02-18 Wed 15:53] =>  0:07
+:END:
+ * [[id:0ccaa3a2-8f5d-4ffd-8e43-76204facbb6c][Biased N Binary Representation]]
+** Biased-127 in 8 bits
+:LOGBOOK:
+CLOCK: [2026-02-18 Wed 15:53]--[2026-02-18 Wed 16:00] =>  0:07
+:END:
+ * [[id:45ebf03e-b4d9-4753-848b-e0c23bc6a3e1][Fixed Point Notation]] 
+** Ep 018: Introduction to Floating-Point Binary and IEEE-754 Notation
+:LOGBOOK:
+CLOCK: [2026-02-18 Wed 16:05]--[2026-02-18 Wed 16:31] =>  0:26
+:END:
+ * [[id:a2b71cc4-dcdf-4e0a-ad11-9a3cdd0c3675][IEEE-754 Notation]] 
+** Ep 019: Introduction to ASCII Character Encoding
+:LOGBOOK:
+CLOCK: [2026-02-18 Wed 17:02]--[2026-02-18 Wed 17:12] =>  0:10
+:END:
+ * [[id:08fa36a0-46b7-422e-8137-e1377c7b552c][ASCII]] 
+** Ep 020: Unicode Code Points and UTF-8 Encoding
+:LOGBOOK:
+CLOCK: [2026-02-18 Wed 17:13]--[2026-02-18 Wed 17:35] =>  0:22
+:END:
+** Ep 021: UTF-8 Encoding Examples
+:LOGBOOK:
+CLOCK: [2026-02-19 Thu 13:38]--[2026-02-19 Thu 13:46] =>  0:08
+:END:
+** Ep 022: Intro to Boolean Logic, Truth Tables, and the Inverter
+:LOGBOOK:
+CLOCK: [2026-02-19 Thu 13:46]--[2026-02-19 Thu 13:55] =>  0:09
+:END:
+
++ [[id:549f7460-0ca6-479d-99ab-89ba20881c3b][Logic Gates]]
+
+** Ep 023: The AND Logic Gate
+:LOGBOOK:
+CLOCK: [2026-02-19 Thu 13:55]--[2026-02-19 Thu 14:09] =>  0:14
+:END:
+** Ep 024: The OR Logic Gate
+:LOGBOOK:
+CLOCK: [2026-02-19 Thu 14:09]--[2026-02-19 Thu 14:15] =>  0:06
+:END:
+** Ep 025: The XOR Logic Gate
+CLOCK: [2026-02-19 Thu 14:47]--[2026-02-19 Thu 14:57] =>  0:10
+
+** Ep 026: Introduction to Combinational Logic
+:LOGBOOK:
+CLOCK: [2026-02-19 Thu 14:57]--[2026-02-19 Thu 15:10] =>  0:13
+:END:
+
+** Ep 027: Deriving a Truth Table from Combinational Logic
+:LOGBOOK:
+CLOCK: [2026-02-19 Thu 15:10]--[2026-02-19 Thu 15:21] =>  0:11
+:END:
+
++ [[id:80b01418-19ea-4f12-a355-804bd7b7f103][Deriving a Truth Table from Combinational Logic]]
+
+
+** Ep 028: Boolean Expressions, Circuits, and Truth Tables
+:LOGBOOK:
+CLOCK: [2026-02-19 Thu 15:21]--[2026-02-19 Thu 15:32] =>  0:11
+:END:
+
+** Ep 029: Active Low Decoders
+:LOGBOOK:
+CLOCK: [2026-02-19 Thu 15:41]--[2026-02-19 Thu 15:56] =>  0:15
+:END:
+
++ [[id:fdaf86b9-6e08-488f-bc51-e9d6a6ef05d9][Active Low]]
+
+
+** Ep 030: Introduction to Boolean Algebra
+:LOGBOOK:
+CLOCK: [2026-02-19 Thu 15:56]--[2026-02-19 Thu 16:08] =>  0:12
+:END:
+
+** Ep 031: Identies Of Boolean algebra
+:LOGBOOK:
+CLOCK: [2026-02-19 Thu 16:08]--[2026-02-19 Thu 16:18] =>  0:10
+:END:
+
+** Ep 032: Properties of Boolean Algebra
+:LOGBOOK:
+CLOCK: [2026-02-19 Thu 16:18]--[2026-02-19 Thu 16:52] =>  0:34
+:END:
+
+** Ep 033: De Morgan's Theorem and Other Properties
+:LOGBOOK:
+CLOCK: [2026-02-19 Thu 16:52]--[2026-02-19 Thu 17:03] =>  0:11
+:END:
+
+** Ep 034: Basic Boolean Algebraic Simplification Examples
+:LOGBOOK:
+CLOCK: [2026-02-19 Thu 17:39]--[2026-02-19 Thu 18:27] =>  0:48
+:END:
+
+
+** Ep 035: More Boolean Algebraic Simplification Examples
+:LOGBOOK:
+CLOCK: [2026-02-20 Fri 09:02]--[2026-02-20 Fri 09:21] =>  0:19
+:END:
+
+** Ep 036: Introduction to Sum of Products Expressions
+:LOGBOOK:
+CLOCK: [2026-02-20 Fri 13:03]--[2026-02-20 Fri 13:08] =>  0:05
+CLOCK: [2026-02-20 Fri 12:05]--[2026-02-20 Fri 12:25] =>  0:20
+:END:
+ * [[id:1553ba21-3f8a-4341-a29c-1afe1d799d64][Sum-Of-Products Expressions]]
+ * [[id:1caedd55-9f71-4b00-8842-d7847d3660c5][Bus Notation]]
+
+** Ep 037: Converting a Sum-of-Products Expression to a Truth Table
+:LOGBOOK:
+CLOCK: [2026-02-20 Fri 14:11]--[2026-02-20 Fri 14:37] =>  0:26
+:END:
+
+** Ep 038: Introduction to Product-of-Sums Expressions
+:LOGBOOK:
+CLOCK: [2026-02-20 Fri 14:37]--[2026-02-20 Fri 14:53] =>  0:16
+:END:
+ * [[id:d9ccb2a9-7a6e-4c44-8ca8-6710a126d6b0][Product-of-Sums Expression]]
+
+** Ep 039: Converting a Product-of-Sums Expression to a Truth Table
+:LOGBOOK:
+CLOCK: [2026-02-20 Fri 14:53]--[2026-02-20 Fri 15:05] =>  0:12
+:END:
+
+** Ep 040: Introduction to Karnaugh Maps
+:LOGBOOK:
+CLOCK: [2026-02-20 Fri 16:22]--[2026-02-20 Fri 16:35] =>  0:13
+:END:
+
+
+** Ep 041: Rules for Makin' Karnaugh Map Rectangles
+:LOGBOOK:
+CLOCK: [2026-02-21 Sat 13:21]--[2026-02-21 Sat 13:47] =>  0:26
+CLOCK: [2026-02-21 Sat 12:51]--[2026-02-21 Sat 12:55] =>  0:04
+CLOCK: [2026-02-21 Sat 11:54]--[2026-02-21 Sat 11:55] =>  0:01
+:END:
+
+** Ep 042: Working with 4x4 Karnaugh Maps
+:LOGBOOK:
+CLOCK: [2026-02-21 Sat 13:47]--[2026-02-21 Sat 14:11] =>  0:24
+:END:
+
+** Ep 043: Karnaugh Maps and Don't Cares
+:LOGBOOK:
+CLOCK: [2026-02-21 Sat 14:28]--[2026-02-21 Sat 14:38] =>  0:10
+:END:
+
+** Ep 044: Using Karnaugh Maps to Design a Binary Adder
+:LOGBOOK:
+CLOCK: [2026-02-21 Sat 14:38]--[2026-02-21 Sat 15:03] =>  0:25
+:END:
+
+** Ep 045: Using Karnaugh Maps to Design a 7-Segment Display Driver
+:LOGBOOK:
+CLOCK: [2026-02-22 Sun 14:40]--[2026-02-22 Sun 14:56] =>  0:16
+:END:
+
+** Ep 046: Introduction to Bitwise Operations and the Bitwise Inverse
+:LOGBOOK:
+CLOCK: [2026-02-22 Sun 14:56]--[2026-02-22 Sun 15:06] =>  0:10
+:END:
+
+ * [[id:7e278236-7056-48cd-91e5-fbde182a1cdb][Bitwise Operations]]
+   
+** Ep 047: Clearing Bits using the Bitwise-AND
+:LOGBOOK:
+CLOCK: [2026-02-22 Sun 15:06]--[2026-02-22 Sun 15:31] =>  0:25
+:END:
+
+** Ep 048: Setting Bits using the Bitwise-OR
+:LOGBOOK:
+CLOCK: [2026-02-22 Sun 15:42]--[2026-02-22 Sun 15:48] =>  0:06
+:END:
+
+** Ep 049: Flipping Bits using the Bitwise-XOR
+:LOGBOOK:
+CLOCK: [2026-02-22 Sun 15:48]--[2026-02-22 Sun 16:01] =>  0:13
+:END:
+
+** Ep 050: Using Parity for Simple Error Detection
+:LOGBOOK:
+CLOCK: [2026-02-22 Sun 16:01]--[2026-02-22 Sun 16:12] =>  0:11
+:END:
+
+ * [[id:9370137c-47c8-49ab-a3c5-033944e0a7ad][Parity]] 
+
+
+** Ep 051: Introduction to Hamming Code
+:LOGBOOK:
+CLOCK: [2026-02-22 Sun 16:26]--[2026-02-22 Sun 16:32] =>  0:06
+CLOCK: [2026-02-22 Sun 16:12]--[2026-02-22 Sun 16:23] =>  0:11
+:END:
+
+ * [[id:66f86d2e-0d82-41f7-9df3-7f0b320f5321][Hamming Code]]
+
+** Ep 052: Hamming Code and the Error Syndrome
+:LOGBOOK:
+CLOCK: [2026-02-22 Sun 17:11]--[2026-02-22 Sun 17:23] =>  0:12
+:END:
+
+** Ep 053: Creating Hamming Code for Eight Data Bits
+:LOGBOOK:
+CLOCK: [2026-02-22 Sun 17:23]--[2026-02-22 Sun 17:42] =>  0:19
+:END:
+
+** Ep 054: The Basic Checksum, 1's Complement Checksum, and 2's Complement Checksum
+:LOGBOOK:
+CLOCK: [2026-02-22 Sun 17:42]--[2026-02-22 Sun 18:00] =>  0:18
+:END:
+ * [[id:56e01cd2-598e-48d0-855e-afd2b8a42bf5][Checksums]]
+** Ep 055: Introduction to Cyclic Redundancy Checks (CRC)
+:LOGBOOK:
+CLOCK: [2026-02-22 Sun 18:00]--[2026-02-22 Sun 18:35] =>  0:35
+:END:
+ * [[id:a3bc1df4-1bb6-4131-937a-9587d1db62a8][Cyclic Redundancy Checks]]
+** Ep 056: The Basics of Storing a Bit with the S-R Latch
+:LOGBOOK:
+CLOCK: [2026-02-23 Mon 11:13]--[2026-02-23 Mon 12:04] =>  0:51
+:END:
+ * [[id:ee05c84c-36f8-4174-84cf-cd1627162d39][The Manchester Baby]]
+ * [[id:d62c1289-137d-412a-9ffc-6a81dce51a40][SR Latch]]
+
+** Ep 057: Latch and Flip-Flop Operation
+:LOGBOOK:
+CLOCK: [2026-02-23 Mon 12:04]--[2026-02-23 Mon 12:23] =>  0:19
+:END:
+ * [[id:71c2d89f-509d-4630-b372-a6a719a97766][Latch & Flip-Flop]]
+
+** Ep 058: Timing Diagrams of Flip-Flops and Latches
+:LOGBOOK:
+CLOCK: [2026-02-23 Mon 13:59]--[2026-02-23 Mon 14:15] =>  0:16
+:END:
+ * [[id:6ba819fc-b1f7-4a8f-a738-63c4f2a0f22d][Timing Diagrams]]
+
+
+** Ep 059: D Flip-Flop Event Detector
+:LOGBOOK:
+CLOCK: [2026-02-23 Mon 15:30]--[2026-02-23 Mon 15:58] =>  0:28
+CLOCK: [2026-02-23 Mon 15:05]--[2026-02-23 Mon 15:09] =>  0:04
+:END:
+
+ * [[id:f4f8d6f5-7df5-4188-98ec-6a23546b3e36][Polling]] 
+
+   
+** Ep 060: D Flip-Flop Divide-by-Two Circuit
+:LOGBOOK:
+CLOCK: [2026-02-23 Mon 16:19]--[2026-02-23 Mon 16:26] =>  0:07
+:END:
+ * [[id:f7e69a1f-fce1-467d-81e4-438141039f06][Divide-by-Two Circuit]]
+
+   
+** Ep 061: D Flip-Flop Binary Counter/Timer Circuit
+:LOGBOOK:
+CLOCK: [2026-02-23 Mon 16:26]--[2026-02-23 Mon 16:39] =>  0:13
+:END:
+ * [[id:522a7681-44dc-4b01-a44c-71ea83770406][D Flip-Flop Binary Counter/Timer Circuit]]
+
+   
+** Ep 062: Transparent D Latch Applications
+:LOGBOOK:
+CLOCK: [2026-02-23 Mon 16:53]--[2026-02-23 Mon 17:00] =>  0:07
+:END:
+
+** Ep 063: Introduction to State Machines: Designing a Simple Traffic Signal
+:LOGBOOK:
+CLOCK: [2026-02-25 Wed 11:36]--[2026-02-25 Wed 12:06] =>  0:30
+CLOCK: [2026-02-25 Wed 10:00]--[2026-02-25 Wed 10:19] =>  0:19
+CLOCK: [2026-02-23 Mon 17:00]--[2026-02-23 Mon 17:39] =>  0:39
+:END:
+
+ * [[id:32584f66-7175-4816-840a-29c6d345a14c][State Machine]]
+
+** Ep 064: State Machine Theory: Breaking the Moore Machine into its Parts
+:LOGBOOK:
+CLOCK: [2026-02-25 Wed 12:06]--[2026-02-25 Wed 12:20] =>  0:14
+:END:
+
+** Ep 065: Using State Machines to Design a Touchless Toilet Flusher
+:LOGBOOK:
+CLOCK: [2026-02-25 Wed 12:20]--[2026-02-25 Wed 10:57] => -1:23
+:END:
+
+** Ep 066: Designing a Moore State Machine to Detect a Binary Pattern
+:LOGBOOK:
+CLOCK: [2026-02-25 Wed 20:52]--[2026-02-25 Wed 21:25] =>  0:33
+:END:
+
+ethernet example
+synchronization
+
+the numbering of the states changes the circuit, but not the functonality. Different Truthtable -> different logic
+
+** Ep 067: Introduction to the Memory Hierarchy
+:LOGBOOK:
+CLOCK: [2026-02-25 Wed 21:25]--[2026-02-25 Wed 21:39] =>  0:14
+:END:
+
+ * [[id:264839b7-fa63-4788-8cf9-ed95cd810961][Flat Memory Space]]
+ * [[id:c9dd6416-8aa9-4a38-83bf-95e47726f584][Memory Hirarchy]]
+ * [[id:ac0bf5e2-c529-454c-b011-3ad8c69b8d08][Registers]]
+
+** Ep 068: Organization of a Simple Memory Device
+:LOGBOOK:
+CLOCK: [2026-02-25 Wed 22:00]--[2026-02-25 Wed 22:10] =>  0:10
+CLOCK: [2026-02-25 Wed 21:52]--[2026-02-25 Wed 21:55] =>  0:03
+CLOCK: [2026-02-25 Wed 21:39]--[2026-02-25 Wed 21:40] =>  0:01
+:END:
+
+ * [[id:d15e649d-4d9c-43ab-a5bf-0ea3a49196d1][Address Decoding]]

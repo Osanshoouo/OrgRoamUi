@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       e1b0354e-96b2-4e80-88fd-3aa6685bc50b
+:NOTE_LEVEL: 1
+:END:
+#+title: Kombinatorische Bauelemente
+#+filetags: :@computerEngineering:@boat:
+
+* Kombinatorische Bauelemente
+:LOGBOOK:
+CLOCK: [2026-02-15 Sun 22:26]--[2026-02-15 Sun 22:38] =>  0:12
+CLOCK: [2026-02-14 Sat 16:29]--[2026-02-14 Sat 16:37] =>  0:08
+:END:
+
+
+[[id:29147639-62c5-4c19-ab1c-3e6e8ab6eaf0][Code-Umsetzer]]
+[[id:90306fa9-1c1c-46f7-a327-02cd02e3ec91][Hazards]]
+[[id:6ff1ead6-5978-4f35-aab7-7c3a7ee37b1b][Multiplexer]]
+[[id:4c606852-8854-4f21-a652-122ef0ae8e5c][Decoder & Encoder]]
+[[id:71c2d89f-509d-4630-b372-a6a719a97766][Latch & Flip-Flop]]
+[[id:ac0bf5e2-c529-454c-b011-3ad8c69b8d08][Registers]]
+[[id:e333d7fd-012c-4e8a-bc32-37f952aa8757][RAM]] / [[id:843cb1c2-9e85-4f68-95a0-aa8320fb1e4f][ROM]]
+[[id:c2bcffec-010d-44e0-9c4d-405460e4a19e][PLA]]
+[[id:bbdb029e-f37e-4aa5-88d2-cdabe73ee645][Counter]]
+[[id:e3eb38df-3621-4a0a-9b85-dfb682e43af6][Adder]]
+[[id:a557ed91-b426-4aa2-823b-19a898d3200a][ALU]]
+

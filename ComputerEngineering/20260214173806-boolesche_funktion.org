@@ -1,0 +1,8 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ID:       92d78101-bd33-4618-a71d-c1e3f76e9805
+:END:
+#+title: Boolesche Funktion
+#+filetags: :@computerEngineering:@boat:
+
+In mathematics, a Boolean function is a [[id:d10cbaf0-35cd-44a7-b2e0-a2f53aa09b42][Function]] whose arguments and result assume values from a two-element set (usually {true, false}, {0,1} or {−1,1}). Boolean functions are the subject of [[id:e207e4c0-b3b4-4ee5-b891-bc3a56832fea][Boolean Algebra]] and [[id:b52eff51-e272-495b-9f53-0412e886cccd][switching theory]].

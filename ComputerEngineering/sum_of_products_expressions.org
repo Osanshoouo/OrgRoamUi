@@ -1,0 +1,102 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       1553ba21-3f8a-4341-a29c-1afe1d799d64
+:END:
+#+title: Sum-Of-Products Expressions
+#+LATEX_HEADER: \usepackage{amsmath}
+#+filetags: :@computerEngineering:@boat:
+* Sum-Of-Products Expressions
+
+Is the AND-Gate version of [[id:d9ccb2a9-7a6e-4c44-8ca8-6710a126d6b0][Product-of-Sums Expressions]]
+
+** Truthtable to SoP
+Truthtable: only true if there are exactly 2 1's or 0's next to each other. The x_0 to x_3 are isolating all of these ones. Since you can create an AND gate to get outputs that are only true / 1 for a single combination, you can now do that for every x.
+
+| A | B | C |   | x |   | x_0 | x_1 | x_2 | x_3 |
+|---+---+---+---+---+---+----+----+----+----|
+| 0 | 0 | 0 |   | 0 |   |  0 |  0 |  0 |  0 |
+| 0 | 0 | 1 |   | 1 |   |  1 |  0 |  0 |  0 |
+| 0 | 1 | 0 |   | 0 |   |  0 |  0 |  0 |  0 |
+| 0 | 1 | 1 |   | 1 |   |  0 |  1 |  0 |  0 |
+| 1 | 0 | 0 |   | 1 |   |  0 |  0 |  1 |  0 |
+| 1 | 0 | 1 |   | 0 |   |  0 |  0 |  0 |  0 |
+| 1 | 1 | 0 |   | 1 |   |  0 |  0 |  0 |  1 |
+| 1 | 1 | 1 |   | 0 |   |  0 |  0 |  0 |  0 |
+
+\begin{math}
+\( X_0 &= \overline{A}\overline{B}C  \) \\
+\( X_1 &= \overline{A}BC \) \\
+\( X_2 &= A \overline{B} \overline{C} \) \\
+\( X_3 &= AB \overline{C}\) \\
+\end{math}
+
+As the name implies, you then take the Sum of these Products (and simplify)
+
+\begin{displaymath}
+
+\begin{equation*}
+ X_0 + X_{1} + X_{2} + X_{3} \\
+\end{equation*}
+
+\begin{equation*}
+\overline{A} \; \overline{B}C + \overline{A}BC + A \overline{B} \; \overline{C} &+ AB \overline{C}\) \\
+\end{equation}
+
+\begin{equation*}
+\begin{align*}
+X = \overline{A} \cdot C \cdot (\overline{B} + B) &+ \\
+&+ A\overline{C} (\overline{B} + B)
+\end{align*}
+
+\begin{align*}
+X = \overline{A}C \cdot 1 + A \overline{C} \cdot 1
+\end{align*}
+
+
+\begin{align*}
+X = \overline{A}C + A \overline{C}
+\end{align*}
+
+
+\end{displaymath}
+
+
+*This is the Sum of Products (SOP)*
+
+** SoP to truthtable
+\( X = \overline{A} B \overline{C} + \overline{B} \overline{C} + C  \)
+
+Since the two AND Gates and the C wire go into the OR gate, if any of those gates is Active, the circuit is active.
+So the only case where the Circuit outputs 0 is when C and Both the AND gates output 0.
+
+Now you can use the AND to Truth table conversion. The first Product just gives 1 in the line where A=0 B=1 and C=0. The same goes for the other products, so we just write those down. Then we just combine them (with OR) to get the output.
+
+| A | B | C |   | Output (OR of products) | Product 1 | Product 2 | Product 3 (just C) |
+|---+---+---+---+-------------------------+-----------+-----------+--------------------|
+| 0 | 0 | 0 |   |                       1 |         0 |         1 |                  0 |
+| 0 | 0 | 1 |   |                       1 |         0 |         0 |                  1 |
+| 0 | 1 | 0 |   |                       1 |         1 |         0 |                  0 |
+| 0 | 1 | 1 |   |                       1 |         0 |         0 |                  1 |
+| 1 | 0 | 0 |   |                       1 |         0 |         1 |                  0 |
+| 1 | 0 | 1 |   |                       1 |         0 |         0 |                  1 |
+| 1 | 1 | 0 |   |                       0 |         0 |         0 |                  0 |
+| 1 | 1 | 1 |   |                       1 |         0 |         0 |                  1 |
+
+This Circuit has a single 0. So this is them same as \( \overline{A} + \overline{B} + C\). So just an or Gate with these 3 inputs, which is a lot more simple than the one above.
+
+The Circuit:
+[[file:/home/steve/OrgVault/images/computerEnginnering/sum_of_products_basic_example.png]]
+
+
+
+*** Appyling DeMorgan's Theorem
+
+Due to De Morgans' Theorem:
+[[file:/home/steve/OrgVault/images/computerEnginnering/de_morgans_theorem_example_circuit.png]]
+
+
+we can replace the or and AND Gates with the faster NAND Gate, making the circuit faster and more efficient:
+
+
+[[file:/home/steve/OrgVault/images/computerEnginnering/replacing_or_gate_with_nand gates.png]]

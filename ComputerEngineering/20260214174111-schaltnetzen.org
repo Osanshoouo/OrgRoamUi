@@ -1,0 +1,7 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ID:       81661bb0-1662-4eaf-a7ad-bcc598d3f9fb
+:END:
+#+title: Schaltnetzen
+#+filetags: :@computerEngineering:@boat:
+

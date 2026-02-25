@@ -1,0 +1,9 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       1caedd55-9f71-4b00-8842-d7847d3660c5
+:END:
+#+title: Bus Notation
+#+filetags: :@computerEngineering:@boat:
+* Bus Notation
+

@@ -1,0 +1,54 @@
+:PROPERTIES:
+:NOTE_LEVEL: 2
+:ROAM_ALIASES: ADC
+:ID:       6891030f-faa2-4cb7-a4e0-20e6add50ed7
+:END:
+#+title: Analog-Digital Converter
+#+filetags: :@computerEngineering:@boat:
+* Analog to Digital Conversion
+ * [[id:0033ac3d-9768-4862-a9f9-babf178edf5a][Sampling]]
+ * [[id:74640f81-3082-4e30-8867-4a32c5720691][Quantization]]
+
+needed values:
+ * min value
+ * max value
+ * range
+ * bit depth
+ 
+** Oven example
+
+Measuring
+minimum value: doenst need to go to freezing
+maximum value: doenst need to go to heat of the sun
+
+all values are between these values.
+
+Max will be 111111...
+And Min will be 000000...
+
+The Bit Depth is the Number of bits in the digital value.
+The Number of Sections this creates is 2^n-1, with n being the Bit Depth.
+
+Its basically the resolutions on the Y Axis of the wave, keeping all steps between these lines as discrete, clamping to the nearest line.
+
+So if your Oven goes from 200 to 500 \deg F, then if you have a bit depth of 8, then you divide the 300 \deg F by 255 (2^8 - 1), which gives a resolution of 1.176\deg.
+
+So given the value 01010110_2 = 86_10 
+
+You go from the minimum and get the Temperature in the oven of:
+\( 200\deg+86 \times \frac{300}{255} \approx 301\deg \)
+
+** Example:
+Thermometer, getting a temp based on voltage, trying to convert it to binary / a display of numbers.
+
+Min: 33\deg C
+Max: 46\deg C
+Range: Max-Min = 13\deg C
+Bit depth: 8 bits
+
+Resolution: Range/ 2^8-1 = 0.05 \deg C/intervall
+
+Example: 01001011_2 = 75_10
+always use fraction to avoid rounding errors
+\( temp = 33\deg + 75 * \frac{13\deg}{255} \)
+\( temp \approx 36.8\deg \)

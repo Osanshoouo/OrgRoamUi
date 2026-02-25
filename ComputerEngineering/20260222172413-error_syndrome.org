@@ -1,0 +1,33 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       9c59ecc5-a519-4925-b16d-7f08a51ffb01
+:END:
+#+title: Error Syndrome
+#+filetags: :@computerEngineering:@boat:
+* Error Syndrome
+We have a set of data bits and a set of parity bits. From the Data bits we create the P\prime bits. We then XOR the P and P\prime bits:
+ * if there is exactly one bit is a 1 in the Syndrome then a parity bit was flipped
+ * if two bits are 1, then a data bit was flipped
+
+We generate the Parity bit by Using XOR on different combinations of Databits. However in those Parity bits, the cant be two Bits sharing the same group membership.
+
+P_0 = D_0 \oplus D_1 \oplus D_3
+P_1 = D_1 \oplus D_2 \oplus D_3
+P_2 = D_0 \oplus D_2 \oplus D_3
+
+
+| S_2 | S_1 | S_0 | Error    |
+|----+----+----+----------|
+|  0 |  0 |  0 | no error |
+|  0 |  0 |  1 | P_0       |
+|  0 |  1 |  0 | P_1       |
+|  0 |  1 |  1 | D_1       |
+|  1 |  0 |  0 | P_2       |
+|  1 |  0 |  1 | D_0       |
+|  1 |  1 |  0 | D_2       |
+|  1 |  1 |  1 | D_3       |
+
+From this table you could also derive how the Parity bits should be created in turn.
+
+[[file:/home/steve/OrgVault/images/computerEnginnering/error_syndrom_basic_example_and_circuit.png]]

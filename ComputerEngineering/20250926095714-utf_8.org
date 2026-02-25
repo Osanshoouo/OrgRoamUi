@@ -1,0 +1,54 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ID:       bbfff7ce-5d24-4426-8a08-113e5f2a2e5a
+:END:
+#+title: UTF-8
+#+filetags: :@computerEngineering:@boat:
+
+* UTF-8
+UTF-8 uses the MSB of every byte of a character to convey how many bytes that given symbol consists of. This means you dont have to send 4 bytes if you just use ASCII, but you still have the option to use the 4 bytes for more rare symbols.
+
+When you just have a stream of bits, then its pretty much impossible to tell whether each byte is part of one symbol, or just a series of bytes. That is where UTF-8 actually comes in.
+
+** 1 byte UTF-8
+All UTF-8 1 byte characters start with 0. Which is a direct mapping to [[id:08fa36a0-46b7-422e-8137-e1377c7b552c][ASCII]]. So if the MSB is a 0, then the character is just one byte long and maps directly to ASCII encoding.
+
+This gives 8bits \to 127 different options of characters.
+
+** 2 byte UTF-8 and further
+
+The first byte in the 2 byte UTF-8 Starts with 110
+The second byte will start with 10
+
+This gives 11 bits \to 2047 different values / characters.
+
+** 3 byte UTF-8 and further
+
+The first byte in the 2 byte UTF-8 Starts with 1110
+The second and third byte will start with 10
+
+This gives 16 bits \to 65535 different values / characters.
+
+** 4 byte UTF-8 and further
+The first byte in the 2 byte UTF-8 Starts with 11110
+The second, third and fourth byte will start with 10
+
+** Encoding of Symbols
+Given an Unicode Code Point, you can find the number of bytes needed by the number after the U. For this you just compare the value to the range of 1-4 byte characters and see where it would fit in.
+
+
+For example: \pi = U+03C0
+converting the he to binary gives: 0000 0011 1100 0000
+
+You now count Up to the most significant 1, which in this case is 11 digits.
+You then map them to the UTF-8, starting from the LSB:
+
+   Byte 1       Byte 2
+*110* 01111  *10* 000000
+
+(Bold are the UTF given values)
+
+So value for \pi in UTF-8 would be CF80.
+
+
+

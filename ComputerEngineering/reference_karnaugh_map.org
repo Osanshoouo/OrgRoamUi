@@ -1,0 +1,58 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       d10a47c2-89c9-40d1-a0bb-055afffcc279
+:END:
+#+title: Reference Karnaugh Map
+#+filetags: :@computerEngineering:@boat:
+* Reference Karnaugh Map
+
+
+\begin{tikcd}
+\begin{karnaugh-map}(label=corner)[4][4][1][$D$][$C$][$B$][$A$]
+\terms{0}{0}
+\terms{1}{1}
+\terms{2}{2}
+\terms{3}{3}
+\terms{4}{4}
+\terms{5}{5}
+\terms{6}{6}
+\terms{7}{7}
+\terms{8}{8}
+\terms{9}{9}
+\terms{10}{10}
+\terms{11}{11}
+\terms{12}{12}
+\terms{13}{13}
+\terms{14}{14}
+\terms{15}{15}
+\end{karnaugh-map}
+\end{tikcd}
+
+
+Example:
+\begin{tikcd}
+\begin{karnaugh-map}(label=corner)[4][4][1][$D$][$C$][$B$][$A$]
+\terms{0}{1}
+\terms{1}{1}
+\terms{2}{1}
+\terms{3}{0}
+\terms{4}{1}
+\terms{5}{1}
+\terms{6}{1}
+\terms{7}{1}
+\terms{8}{0}
+\terms{9}{1}
+\terms{10}{0}
+\terms{11}{0}
+\terms{12}{0}
+\terms{13}{0}
+\terms{14}{0}
+\terms{15}{0}
+\implicant{1}{3}
+\implicant{2}{6}
+\implicant{1}{3}
+\implicant{2}{6}
+\implicantedge{1}{1}{9}{9}
+\end{karnaugh-map}
+\end{tikcd}

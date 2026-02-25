@@ -1,0 +1,10 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       1ce7764f-dd0a-42f9-8b8b-312b1c8069ad
+:END:
+#+title: Watchdog Timer
+#+filetags: :@computerEngineering:@boat:
+* Watchdog Timer
+
+Operating System keeps loading a really big timer counting down. It perodically resets the timer. If the timer ever reaches 0, the hardware automatially resets. This keeps track of things if the processor ever loses control over the system. If the timer runs out, something is keeping up ther processor.

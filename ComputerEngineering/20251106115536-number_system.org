@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       9eeb0842-7024-4f44-9b0e-7656e3c2ca80
+:NOTE_LEVEL: 1
+:NOTE_LEVEL: 1
+:END:
+#+title: Number System
+#+filetags: :@computerEngineering:@boat:
+

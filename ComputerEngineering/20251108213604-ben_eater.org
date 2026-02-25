@@ -1,0 +1,42 @@
+:PROPERTIES:
+:ID:       dcca6a7b-8fe3-402d-a37a-7a4e3b13aa78
+:END:
+#+title: Ben Eater
+
+* Ben Eater                                            :@computerEngineering:
+
+** Worlds worst video card
+:LOGBOOK:
+CLOCK: [2025-11-08 Sat 20:51]--[2025-11-08 Sat 21:36] =>  0:45
+:END:
+
+** Experimenting with LEDs | Digital Electronics
+:LOGBOOK:
+CLOCK: [2025-12-28 Sun 15:54]--[2025-12-28 Sun 16:18] =>  0:24
+:END:
+
+[[https://www.youtube.com/watch?v=CdqvY_vY1XA&list=PLowKtXNTBypETld5oX1ZMI-LYoA2LWi8D][Source]]
+
+
+[[id:aff081ec-fb00-49db-a1ac-a82321922584][LED]]
+
+** Building an 8-bit Breadboard Computer
+:LOGBOOK:
+CLOCK: [2026-02-05 Thu 09:10]--[2026-02-05 Thu 09:21] =>  0:11
+CLOCK: [2026-02-01 Sun 15:42]--[2026-02-01 Sun 16:48] =>  1:06
+:END:
+
+
+chips usually have capacitors going across them in order to level out the electric flow in case they try to suddenly pull more power (which the power source will resist)
+
+** Modern SID chip substitutes
+:LOGBOOK:
+CLOCK: [2026-02-02 Mon 14:18]--[2026-02-02 Mon 14:35] =>  0:17
+:END:
+
+** SR Latch and D Latch
+:LOGBOOK:
+CLOCK: [2026-02-15 Sun 21:12]--[2026-02-15 Sun 21:27] =>  0:15
+:END:
+
+** 

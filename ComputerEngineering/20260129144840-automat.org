@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       7f45c5bc-b7d2-40c2-b6f2-258a8d92cb76
+:NOTE_LEVEL: 1
+:END:
+#+title: Automat
+#+filetags: :@computerEngineering:@boat:
+
+** Definitionen von automaten: (GTI 6 - Seite 29)
+
+Deterministische Automaten
+
+Vollstaendiger Automat
+
+** Arten von Automaten
+[[id:54fc005b-e47d-4f12-8786-f3119ab3ae7c][Mealy Automat]]
+[[id:b3c5bab9-d65f-4b5a-a06a-f5b53f441aa4][Moore Automat]]

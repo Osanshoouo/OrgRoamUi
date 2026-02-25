@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       843cb1c2-9e85-4f68-95a0-aa8320fb1e4f
+:NOTE_LEVEL: 1
+:END:
+#+title: ROM
+#+filetags: :@computerEngineering:@boat:
+

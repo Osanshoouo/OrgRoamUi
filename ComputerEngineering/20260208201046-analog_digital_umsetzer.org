@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       75d5407f-e7c1-4013-9ad0-80281b9225ab
+:NOTE_LEVEL: 1
+:END:
+#+title: Analog-/Digital-Umsetzer
+#+filetags: :@computerEngineering:@boat:
+

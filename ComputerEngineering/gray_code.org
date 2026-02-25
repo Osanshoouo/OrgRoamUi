@@ -1,0 +1,97 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       627f578f-42ef-442f-beae-0df4a55c38f4
+:ROAM_REFS: Intermation
+:END:
+#+title: Gray Code
+#+filetags: :@computerEngineering:@boat:
+* Gray Code
+
+We dont know what a sequence like 10010111 represents until we are told. So it might be anything from [[id:eb1a3e89-07ad-437b-aa12-e501af655878][Unsigned Binary]], to the output of an [[id:6891030f-faa2-4cb7-a4e0-20e6add50ed7][Analog-Digital Converter]]. It might also be a light sensor as so.
+
+Gray Code is used when there is a sequence where only one bit at a time is supposed to change. It can prevent wrong readings that might occour from "race conditions" where a signal turns into something for just a split second. Like going from 011 to 100 looking like 111.
+
+Here only one bit at a time changes:
+| B_2 B_1 B_0 | Gray Code |
+|      000 |       000 |
+|      001 |       001 |
+|      010 |       011 |
+|      011 |       010 |
+|      100 |       110 |
+|      101 |       111 |
+|      110 |       101 |
+|      111 |       100 |
+
+How to create these:
+
+I bit sequences, meaning 0 and 1 are already gray code, from there you go like this
+
+First you turn around the 01 and append it, so we have 0110. We then add 00 next to the original pattern and 11 to the reversed one
+| 0 | 0 |
+| 0 | 1 |
+| 1 | 1 |
+| 1 | 0 |
+
+We can do the same thing again to get 3 bits:
+| 0 | 0 | 0 |
+| 0 | 0 | 1 |
+| 0 | 1 | 1 |
+| 0 | 1 | 0 |
+| 1 | 1 | 0 |
+| 1 | 1 | 1 |
+| 1 | 0 | 1 |
+| 1 | 0 | 0 |
+
+And again for 4 bits
+| 0 | 0 | 0 | 0 |
+| 0 | 0 | 0 | 1 |
+| 0 | 0 | 1 | 1 |
+| 0 | 0 | 1 | 0 |
+| 0 | 1 | 1 | 0 |
+| 0 | 1 | 1 | 1 |
+| 0 | 1 | 0 | 1 |
+| 0 | 1 | 0 | 0 |
+|---+---+---+---|
+| 1 | 1 | 0 | 0 |
+| 1 | 1 | 0 | 1 |
+| 1 | 1 | 1 | 1 |
+| 1 | 1 | 1 | 0 |
+| 1 | 0 | 1 | 0 |
+| 1 | 0 | 1 | 1 |
+| 1 | 0 | 0 | 1 |
+| 1 | 0 | 0 | 0 |
+
+
+Each of these values has an value in unsigned binary
+
+| 0 | 0 | 0 | 0 |      |
+| 0 | 0 | 0 | 1 |      |
+| 0 | 0 | 1 | 1 |      |
+| 0 | 0 | 1 | 0 |      |
+| 0 | 1 | 1 | 0 |      |
+| 0 | 1 | 1 | 1 |      |
+| 0 | 1 | 0 | 1 |      |
+| 0 | 1 | 0 | 0 |      |
+|---+---+---+---+------|
+| 1 | 1 | 0 | 0 |      |
+| 1 | 1 | 0 | 1 |      |
+| 1 | 1 | 1 | 1 |      |
+| 1 | 1 | 1 | 0 |      |
+| 1 | 0 | 1 | 0 | 1100 |
+| 1 | 0 | 1 | 1 |      |
+| 1 | 0 | 0 | 1 |      |
+| 1 | 0 | 0 | 0 |      |
+
+for example 12. So the twelveth number in Gray code is 1010, which is 1100 in unsigned binary. You proceed as follows:
+
+prepend the uBit version with a 0:
+
+01100
+
+Compare the bits one by one, if they are different, put a 1. If they are the same, then put a 1.
+
+01 11 10 00
+ 1  0  1  0
+
+ this also gives you the Gray code value. If you want to get the next higher number, you can do the same thing again.

@@ -1,0 +1,12 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: Circuit Components I killed so far
+:ID:       2e3c84bd-6217-4e3e-bb65-057381b23066
+:END:
+#+title: Circuit Death List
+#+filetags: :@computerEngineering:@boat:
+
+* Circuit Death List
+** 3461BS 4x1 Counter
+Time of Death: <2026-02-16 Mon 14:15>
+Cause of Death: I moved around the cable and then shorted the circuit, now the right digit doenst work. But the upper half didnt really work either. Maybe I am stupid or it was arlready dying.

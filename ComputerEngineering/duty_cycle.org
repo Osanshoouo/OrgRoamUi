@@ -1,0 +1,29 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       e4fab5e1-8e10-4f72-9625-3ae32f0f6dca
+:ROAM_REFS: Intermation
+:END:
+#+title: Duty Cycle
+#+filetags: :@computerEngineering:@boat:
+* Duty Cycle
+** Definition
+The Duty Cycle gives the Percentage of time a periodic pulse train = 1 (logic)
+
+\( duty \; cycle = \frac{frequency_{}}{Period} \times 100 \% \)
+\( duty \; cycle = \frac{t_{w}}{T} \times 100 \% \)
+
+Since its unitless You can not calculate the frequecy from the Duty Cycle
+
+Extra: The use of duty cycle for output control is called pulse width modulation or PWM.
+
+** Example
+
+[[file:/home/steve/OrgVault/images/computerEnginnering/duty-cycle-diagram-duty-cycle.jpg]]
+
+** LED Example
+An LED is a binary device, that means it cant actually dim down. What actually happens is that the Duty Cycle of the led just goes down.
+
+
+
+

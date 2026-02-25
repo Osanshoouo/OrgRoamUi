@@ -1,0 +1,9 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       6ba819fc-b1f7-4a8f-a738-63c4f2a0f22d
+:END:
+#+title: Timing Diagrams
+#+filetags: :@computerEngineering:@boat:
+* Timing Diagrams
+

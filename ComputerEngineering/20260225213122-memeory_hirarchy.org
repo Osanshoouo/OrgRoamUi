@@ -1,0 +1,28 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       c9dd6416-8aa9-4a38-83bf-95e47726f584
+:END:
+#+title: Memory Hirarchy
+#+filetags: :@computerEngineering:@boat:
+* Memeory Hirarchy
+The further you go away from the processor you get:
+1. It gets slower
+2. Capacity Increases
+3. Cost per bit goes down (compare 32GB of Ram vs 32GB of HDD)
+
+Processor
+1. Registers
+2. Cache
+3. Main Memory
+4. Long-Term Storage
+   1. [[id:28087605-3746-4f63-bd35-fcc7dc5a8ae2][SSD]]
+   2. [[id:2fe25b01-7e38-404f-ba74-fcea81cf09b2][HDD]]
+
+Food / Milk example.
+Go to fridge first, not the storage in the back, because it further away. But storage is bigger and has a better chance of containing the milk. 
+
+The further you go down, the longer it takes, but the more likely to have what you want. Next stop would be the grocery store. Might take a bit to get there, but its super likely to be there.
+
+
+

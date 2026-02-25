@@ -1,0 +1,9 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       39bcc409-fcf9-4343-8617-d4eb814dcb93
+:END:
+#+title: Active High
+#+filetags: :@computerEngineering:@boat:
+* Active High
+

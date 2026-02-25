@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       f6c19184-1a10-468e-b015-cfa1d99ac6b5
+:NOTE_LEVEL: 1
+:NOTE_LEVEL: 1
+:END:
+#+title: Circuit Theory
+#+filetags: :@computerEngineering:@boat:
+

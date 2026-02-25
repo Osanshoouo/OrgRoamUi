@@ -1,0 +1,38 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       7c89f5cb-726d-448b-8989-584c9d3a0960
+:END:
+#+title: Half Adder
+#+filetags: :@computerEngineering:@boat:
+* Half Adder
+
+addition truth table example
+
+
+
+| A | B | Sum | Carry |
+|---+---+-----+-------|
+| 0 | 0 | 0   | 0     |
+| 0 | 1 | 1   | 0     |
+| 1 | 0 | 1   | 0     |
+| 1 | 1 | 0   | 1     |
+
+C = AB
+
+
+Example:
+\begin{tikcd}
+\begin{karnaugh-map}(label=corner)[2][2][1][$B$][$A$]
+\terms{0}{0}
+\terms{1}{1}
+\terms{2}{1}
+\terms{3}{0}
+\implicant{1}{1}
+\implicant{2}{2}
+\end{karnaugh-map}
+\end{tikcd}
+
+\to \(S = \overline{A}B + A \overline{B}\)
+
+Which is a [[id:7c89f5cb-726d-448b-8989-584c9d3a0960][Half Adder]] A full adder is the same with 3 inputs

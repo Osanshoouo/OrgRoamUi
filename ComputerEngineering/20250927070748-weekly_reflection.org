@@ -1,0 +1,213 @@
+:PROPERTIES:
+:ID:       43fcdb12-d06d-4e99-bbec-f9311b2dc93d
+:END:
+#+title: Weekly Reflection
+
+
+* Weekly Reflection                                             :@reflection:
+
+** 2026-W6
+:LOGBOOK:
+CLOCK: [2026-02-07 Sat 13:52]--[2026-02-07 Sat 14:02] =>  0:10
+:END:
+*** Reflection
+I had my first HRT appointment which was really nice but also stressful. I managed to practice a lot of maths and I think I will do alright next week.
+
+*** Goals
+For next week I just wanna keep everything as is, while doing some more maths practice until friday. After that I will take a break and then Pivot over to GTI. I also have to clean up the apartment a bit more for tuesday and thursday, when the repairmen come over
+
+*** Time Table
+**** CompSci and Maths
+#+BEGIN: clocktable :scope agenda :maxlevel 3 :tags t :block 2026-W6 :stepskip0 t :fileskip0 t :hidefiles t :compact t :match "@science|@config|@maths"
+#+CAPTION: Clock summary at [2026-02-07 Sat 14:02], for week 2026-W06.
+| Tags                               | Headline                                   |    Time |
+|------------------------------------+--------------------------------------------+---------|
+|                                    | *Total time*                               | *27:44* |
+|------------------------------------+--------------------------------------------+---------|
+| @emacs                             | Emacs                                      |    1:52 |
+| @emacs, @config, @elisp            | \_  Config                                 |    1:49 |
+| @emacs, @config, @elisp            | \_    Agenda stuff                         |    0:03 |
+| @emacs, @config, @elisp            | \_    setting up tooling for C in emacs... |    0:52 |
+| @emacs, @config, @elisp            | \_    setting up emacs for C programming   |    0:37 |
+| @emacs, @config, @elisp            | \_    set up projectile in emacs           |    0:17 |
+| @emacs, @learning                  | \_  Learning                               |    0:03 |
+| @emacs, @learning                  | \_    how to use grep in emacs             |    0:03 |
+|------------------------------------+--------------------------------------------+---------|
+| @sysOps, @config                   | System Config                              |    0:54 |
+| @sysOps, @config, @c               | \_    C setup                              |    0:54 |
+|------------------------------------+--------------------------------------------+---------|
+| @school, @maths                    | Modul - Hoehere Mathematik I               |    0:33 |
+| @school, @maths                    | \_  uebungen                               |    0:33 |
+| @school, @maths                    | \_    Mathe - Uebung08                     |    0:33 |
+|------------------------------------+--------------------------------------------+---------|
+| @maths                             | 3Blue1Brown                                |    0:19 |
+| @maths                             | \_  The essence of Linear Algebra          |    0:19 |
+|------------------------------------+--------------------------------------------+---------|
+| @computerEngineering               | Ben Eater                                  |    0:28 |
+| @computerEngineering               | \_  Building an 8-bit Breadboard Computer  |    0:11 |
+| @computerEngineering               | \_  Modern SID chip substitutes            |    0:17 |
+|------------------------------------+--------------------------------------------+---------|
+| @reflection, @rust                 | \_  [[id:73737d8a-a899-4ab2-a2f1-993061c61b4a][Modul - Algorithmen und Programmierung]] |    1:29 |
+| @reflection, @rust                 | \_    Sport                                |    1:29 |
+|------------------------------------+--------------------------------------------+---------|
+| @boat, @computerEngineering        | Computer Engineering                       |    2:10 |
+| @boat, @computerEngineering        | \_  Time Tracking                          |    2:10 |
+| @boat, @computerEngineering        | \_    4N35 Chip                            |    0:06 |
+| @boat, @computerEngineering        | \_    74HC595                              |    0:26 |
+| @boat, @computerEngineering        | \_    flip-flop                            |    0:01 |
+| @boat, @computerEngineering        | \_    S-R latch                            |    0:01 |
+| @boat, @computerEngineering        | \_    Logic Gates                          |    1:36 |
+|------------------------------------+--------------------------------------------+---------|
+| @project, @c, @computerEngineering | \_  Programming a STM32F401                |    4:21 |
+| @project, @c, @computerEngineering | \_    playing around with breadboard       |    1:00 |
+| @project, @c, @computerEngineering | \_    setting up STM32                     |    3:21 |
+|------------------------------------+--------------------------------------------+---------|
+| @maths                             | Maths                                      |   11:50 |
+| @maths                             | \_  TODOs                                  |    0:18 |
+| @maths, @learning                  | \_    Learning - Maths - faktorisieren     |    0:18 |
+| @maths                             | \_  Practice                               |    7:53 |
+| @maths                             | \_    altklausuren                         |    7:53 |
+| @maths                             | \_  Going through boat notes - Maths       |    0:18 |
+| @maths                             | \_  General Topics                         |    2:48 |
+| @maths                             | \_    functions                            |    1:00 |
+| @maths                             | \_    Complex Numbers                      |    0:53 |
+| @maths                             | \_    algebra                              |    0:30 |
+| @maths                             | \_    Basics                               |    0:25 |
+| @maths                             | \_  Pauls Notes                            |    0:33 |
+| @maths                             | \_    Common Math Errors                   |    0:07 |
+| @maths                             | \_    How to study Maths                   |    0:26 |
+|------------------------------------+--------------------------------------------+---------|
+| @project, @c                       | Programming Ascii Art Animations in C      |    2:18 |
+| @project, @c                       | \_  Prep                                   |    2:18 |
+| @project, @c                       | \_    Analysing Code from - "ASMR...       |    2:18 |
+|------------------------------------+--------------------------------------------+---------|
+|                                    | STM32World                                 |    1:30 |
+| @computerEngineering               | \_  STM32 Getting Started Tutorial         |    1:30 |
+#+END:
+
+**** Everything
+#+BEGIN: clocktable :scope agenda :compact t :maxlevel 5 :tags t :block 2026-W6 :stepskip0 t :fileskip0 t :hidefiles t :match "-@break-@distraction-@leisure-@gaming"
+#+CAPTION: Clock summary at [2026-02-07 Sat 14:01], for week 2026-W06.
+| Tags                                          | Headline                                      |    Time |
+|-----------------------------------------------+-----------------------------------------------+---------|
+|                                               | *Total time*                                  | *39:32* |
+|-----------------------------------------------+-----------------------------------------------+---------|
+|                                               | TODOs                                         |    0:08 |
+| @organisation                                 | \_  fix org roam templates                    |    0:08 |
+|-----------------------------------------------+-----------------------------------------------+---------|
+|                                               | TODOs                                         |    0:07 |
+| @health                                       | \_  look up solutions for sleep problems      |    0:07 |
+|-----------------------------------------------+-----------------------------------------------+---------|
+|                                               | Journal                                       |    0:17 |
+|                                               | \_  8:30                                      |    0:13 |
+|                                               | \_  11:28                                     |    0:04 |
+|                                               | TODOs                                         |    0:03 |
+|                                               | \_  check the travel time info - HRT          |    0:03 |
+|-----------------------------------------------+-----------------------------------------------+---------|
+| @journaling                                   | 13:09                                         |    0:27 |
+|                                               | 17:13                                         |    0:25 |
+|-----------------------------------------------+-----------------------------------------------+---------|
+|                                               | Journal                                       |    0:04 |
+|                                               | \_  13:06                                     |    0:04 |
+|-----------------------------------------------+-----------------------------------------------+---------|
+| @emacs                                        | Emacs                                         |    1:52 |
+| @emacs, @config, @elisp                       | \_  Config                                    |    1:49 |
+| @emacs, @config, @elisp                       | \_    Agenda stuff                            |    0:03 |
+| @emacs, @config, @elisp                       | \_      Clean up and config of Agenda sorting |    0:03 |
+| @emacs, @config, @elisp                       | \_    setting up tooling for C in emacs...    |    0:52 |
+| @emacs, @config, @elisp                       | \_    setting up emacs for C programming      |    0:37 |
+| @emacs, @config, @elisp                       | \_    set up projectile in emacs              |    0:17 |
+| @emacs, @learning                             | \_  Learning                                  |    0:03 |
+| @emacs, @learning                             | \_    how to use grep in emacs                |    0:03 |
+|-----------------------------------------------+-----------------------------------------------+---------|
+| @habits                                       | Habits                                        |    1:50 |
+| @habits, @morning                             | \_  Morning Routine                           |    1:30 |
+| @habits, @morning, @exercise                  | \_    Morning Walk                            |    0:22 |
+| @habits, @morning, @mentalHealth              | \_    Spiritual practice                      |    0:10 |
+| @habits, @morning, @mentalHealth, @yoga       | \_      Morning Yoga                          |    0:05 |
+| @habits, @morning, @mentalHealth, @meditation | \_      Morning Meditation                    |    0:05 |
+| @habits, @morning, @cooking                   | \_    Breakfast / drink Protein Shake         |    0:58 |
+| @habits, @evening                             | \_  Evening Routine                           |    0:20 |
+| @habits, @evening, @household                 | \_    Household / Clean the floors            |    0:20 |
+|-----------------------------------------------+-----------------------------------------------+---------|
+| @sysOps, @config                              | System Config                                 |    0:54 |
+| @sysOps, @config, @c                          | \_    C setup                                 |    0:54 |
+|-----------------------------------------------+-----------------------------------------------+---------|
+|                                               | skincare and Hygiene                          |    0:10 |
+| @workout                                      | exercise                                      |    1:05 |
+| @workout                                      | \_  going for walks                           |    1:05 |
+|-----------------------------------------------+-----------------------------------------------+---------|
+|                                               | LaurieWired Videos                            |    0:51 |
+|                                               | \_  Your iPhone is Lying to You About...      |    0:22 |
+|                                               | \_  Your Programming Language Can't...        |    0:29 |
+|-----------------------------------------------+-----------------------------------------------+---------|
+| @school, @maths                               | Modul - Hoehere Mathematik I                  |    0:33 |
+| @school, @maths                               | \_  uebungen                                  |    0:33 |
+| @school, @maths                               | \_    Mathe - Uebung08                        |    0:33 |
+|-----------------------------------------------+-----------------------------------------------+---------|
+| @maths                                        | 3Blue1Brown                                   |    0:19 |
+| @maths                                        | \_  The essence of Linear Algebra             |    0:19 |
+|-----------------------------------------------+-----------------------------------------------+---------|
+| @computerEngineering                          | Ben Eater                                     |    0:28 |
+| @computerEngineering                          | \_  Building an 8-bit Breadboard Computer     |    0:11 |
+| @computerEngineering                          | \_  Modern SID chip substitutes               |    0:17 |
+|-----------------------------------------------+-----------------------------------------------+---------|
+| @organisation                                 | General Organisation                          |    2:30 |
+| @mentalHealth, @organisation                  | \_  HRT appointments                          |    2:30 |
+| @housheold                                    | Household Timers                              |    2:20 |
+| @housheold                                    | \_    cleaning                                |    2:20 |
+|-----------------------------------------------+-----------------------------------------------+---------|
+| @reflection, @rust                            | \_  [[id:73737d8a-a899-4ab2-a2f1-993061c61b4a][Modul - Algorithmen und Programmierung]]    |    1:29 |
+| @reflection, @rust                            | \_    Sport                                   |    1:29 |
+| @reflection, @rust                            | \_      helping jimmy                         |    1:29 |
+|-----------------------------------------------+-----------------------------------------------+---------|
+| @boat, @computerEngineering                   | Computer Engineering                          |    2:10 |
+| @boat, @computerEngineering                   | \_  Time Tracking                             |    2:10 |
+| @boat, @computerEngineering                   | \_    4N35 Chip                               |    0:06 |
+| @boat, @computerEngineering                   | \_    74HC595                                 |    0:26 |
+| @boat, @computerEngineering                   | \_    flip-flop                               |    0:01 |
+| @boat, @computerEngineering                   | \_    S-R latch                               |    0:01 |
+| @boat, @computerEngineering                   | \_    Logic Gates                             |    1:36 |
+|-----------------------------------------------+-----------------------------------------------+---------|
+|                                               | \_  2026-02-04                                |    0:24 |
+|                                               | \_    8:53                                    |    0:24 |
+|-----------------------------------------------+-----------------------------------------------+---------|
+| @project, @c, @computerEngineering            | \_  Programming a STM32F401                   |    4:21 |
+| @project, @c, @computerEngineering            | \_    playing around with breadboard          |    1:00 |
+| @project, @c, @computerEngineering            | \_    setting up STM32                        |    3:21 |
+|-----------------------------------------------+-----------------------------------------------+---------|
+|                                               | Creating a Skyrim Mod                         |    0:21 |
+|                                               | Bethesda Mod School                           |    0:11 |
+|-----------------------------------------------+-----------------------------------------------+---------|
+| @maths                                        | Maths                                         |   11:50 |
+| @maths                                        | \_  TODOs                                     |    0:18 |
+| @maths, @learning                             | \_    Learning - Maths - faktorisieren        |    0:18 |
+| @maths                                        | \_  Practice                                  |    7:53 |
+| @maths                                        | \_    altklausuren                            |    7:53 |
+| @maths                                        | \_      probeklausuren                        |    5:43 |
+| @maths                                        | \_      Online Test - Chapter 1               |    2:10 |
+| @maths                                        | \_  Going through boat notes - Maths          |    0:18 |
+| @maths                                        | \_  General Topics                            |    2:48 |
+| @maths                                        | \_    functions                               |    1:00 |
+| @maths                                        | \_    Complex Numbers                         |    0:53 |
+| @maths                                        | \_    algebra                                 |    0:30 |
+| @maths                                        | \_    Basics                                  |    0:25 |
+| @maths                                        | \_      Notation                              |    0:25 |
+| @maths                                        | \_  Pauls Notes                               |    0:33 |
+| @maths                                        | \_    Common Math Errors                      |    0:07 |
+| @maths                                        | \_    How to study Maths                      |    0:26 |
+|-----------------------------------------------+-----------------------------------------------+---------|
+| @project, @c                                  | Programming Ascii Art Animations in C         |    2:18 |
+| @project, @c                                  | \_  Prep                                      |    2:18 |
+| @project, @c                                  | \_    Analysing Code from - "ASMR...          |    2:18 |
+|-----------------------------------------------+-----------------------------------------------+---------|
+| @pomodoroBreak                                | \_  Pomodoro Break                            |    0:05 |
+|                                               | \_  Creating and Sorting Tasks from...        |    0:04 |
+|                                               | \_  Organisation                              |    0:18 |
+|                                               | \_    Altklausuren beschaffen / durchsehen    |    0:18 |
+|-----------------------------------------------+-----------------------------------------------+---------|
+|                                               | STM32World                                    |    1:30 |
+| @computerEngineering                          | \_  STM32 Getting Started Tutorial            |    1:30 |
+|-----------------------------------------------+-----------------------------------------------+---------|
+|                                               | \_  math functions                            |    0:08 |
+#+END:

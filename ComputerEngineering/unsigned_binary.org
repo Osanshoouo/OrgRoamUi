@@ -1,0 +1,9 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       eb1a3e89-07ad-437b-aa12-e501af655878
+:END:
+#+title: Unsigned Binary
+#+filetags: :@computerEngineering:@boat:
+* Unsigned Binary
+

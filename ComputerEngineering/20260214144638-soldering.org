@@ -1,0 +1,50 @@
+:PROPERTIES:
+:ID:       c88e03b5-29a1-4ed4-b22c-fd69b702abb0
+:END:
+#+title: Soldering
+
+* Learning to Solder                                   :@computerEngineering:
+
+** oneTesla - Soldering Tutorial for Beginners: Five Easy Steps
+:LOGBOOK:
+CLOCK: [2026-02-14 Sat 14:47]--[2026-02-14 Sat 14:56] =>  0:09
+:END:
+
+1) lock your joint in place
+   1. helping hands / soldering splint
+   2. tape
+   3. bending the leads on the other side so the circuit piece stays in place
+2) clean your soldering iron
+   1. remove old solder
+3) Apply head and solde
+   1) Apply heat evenly and melt solder onto joint
+   2) apply iron to one side and then feed solder to the other
+   3) dont put solder onto the iron
+   4) the amount of time it takes for the joint to heat varies
+   5) Make as much contact as possibe between iron and the joint
+      1) hold the edge of the iron against the joint
+         1) not just the tip
+   6) Sometimes you can put a bit of solder on the iron to bride the airgap
+      1) like you soldered cables with multiple iron fibers
+   7) Remove the solder and then the iron
+   8) let the joint cool
+4) Inspect the joint
+   1) even distribution of solder
+   2) is the joint smooth and shiny?
+   3) On a circuitboard
+      1) should make a volcano shape
+      2) should adhere to both the circuit pad and the component lead
+      3) trim leads if needed
+
+            
+            
+** iFixit's Soldering 101: Beginners Guide
+:LOGBOOK:
+CLOCK: [2026-02-14 Sat 14:56]--[2026-02-14 Sat 15:10] =>  0:14
+:END:
+
+ * solder wick for desoldering
+ * flux for better adherance
+ * fume hood
+ * solder
+   * lead free or with lead (yes, actual lead)

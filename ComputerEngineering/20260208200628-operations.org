@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       d244baff-4d97-4a37-a278-a5bb622085db
+:NOTE_LEVEL: 1
+:END:
+#+title: Operations
+#+filetags: :@computerEngineering:@boat:
+

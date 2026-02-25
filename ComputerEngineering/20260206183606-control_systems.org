@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       653f42f5-7331-46df-9b53-9f31356c360b
+:END:
+#+title: Control Systems
+#+filetags: :@computerEngineering:@boat:
+

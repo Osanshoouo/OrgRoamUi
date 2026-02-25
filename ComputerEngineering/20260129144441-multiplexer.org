@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       6ff1ead6-5978-4f35-aab7-7c3a7ee37b1b
+:NOTE_LEVEL: 2
+:END:
+#+title: Multiplexer
+#+filetags: :@computerEngineering:@boat:
+
+
+A multiplexer is a digital circuit that selects one of several input signals and forwards the selected input to a single output line.
+
+That means a multiplexer takes Multiple inputs and selectively forwards them to one output. It can be built with 2 not gates, 4 and gates and one or gate:
+
+~add schematics~
+
+** test                                                            :@config:
+
+Multiplexers optimize the use of transmission lines in communications, reducing the complexity and cost of digital systems.

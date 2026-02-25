@@ -1,0 +1,106 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       32584f66-7175-4816-840a-29c6d345a14c
+:END:
+#+title: State Machine
+#+filetags: :@computerScience:@computerEngineering:@boat:
+* State Machine
+When we give our Circuits memory, then we are creating a State Maching
+
+Example of state is the [[id:564b2716-f090-4e7d-b304-e7206a81cd23][Instruction Pointer]], variables in code or the current value of your for-loop.
+
+It gives you a way to figure out how much memory you need to store the State of the circuit. So if you have 6 inputs, you number them from 0 to 5. 5 in binary is 101, which requires 3 bits to store. So you now know that that circuit would need no more than 3 bits of storage.
+
+** Creating A State Machine Example
+
+A Crossroad with the North South lane and the East West lane. The former is way more busy than tha latter.
+
+Inputs: Timer
+Outputs: Lights(RYG) for both NS and EW
+
+*** 1. System Level Design
+
+T = timer
+T = 0 (timer not running)
+T = 1 timer running
+
+1. Timer starts when EW car detected
+2. Time EW green & NS yellow
+
+Timer starts running and gives NS yellow until its counted to 0. Then it starts again to count down for how long EW gets green and NS gets red. After the timer runs out, we go from green to yellow, count down the timer again and then turn to red on EW and green on NS.
+
+*** 2. Designing a State Diagram
+
+Reset / First State:
+NS Green
+EW Red
+
+Moving from one State to another means storing a new piece of information. In this case in a Flip flop. Here we do this through a clock. At a certain clock rate we check if the Timer is 0
+
+Moore machine:
+Generate ouput only from the state
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+\draw  (8.50,20.75) circle (1.5cm);
+\draw  (13.75,20.75) circle (1.5cm);
+\draw  (13.75,16) circle (1.5cm);
+\draw  (8.5,15.75) circle (1.5cm);
+\draw [->, >=Stealth] (9.25,22) .. controls (10.25,23) and (12.5,23.25) .. (13,22.25) node[pos=0.5, fill=white]{T=1};
+\node [font=\large] at (8.5,21.25) {NS Green};
+\node [font=\large] at (8.5,20.25) {EW Red};
+\draw [->, >=Stealth] (15.25,20.25) .. controls (16,19.5) and (15.75,17.25) .. (15,16.75) node[pos=0.5, fill=white]{T=0};
+\draw [->, >=Stealth] (12.5,15) .. controls (11.75,14.5) and (10.75,14.5) .. (9.75,15) node[pos=0.5, fill=white]{T=0};
+\node [font=\large] at (13.75,21.5) {NS Yellow};
+\node [font=\large] at (13.75,16.5) {NS Red};
+\node [font=\large] at (8.5,16.5) {NS Red};
+\node [font=\large] at (8.5,15.25) {EW yellow};
+\node [font=\large] at (13.75,15.25) {EW green};
+\node [font=\large] at (13.75,20) {EW Red};
+\draw [->, >=Stealth] (7.25,21.75) .. controls (4.75,22.75) and (7.5,25.5) .. (8,22.25) node[pos=0.5, fill=white]{T=0};
+\draw [->, >=Stealth] (14.5,22) .. controls (14.75,25) and (18.75,22) .. (15,21.5) node[pos=0.5, fill=white]{T=1};
+\draw [->, >=Stealth] (15.25,15.5) .. controls (17.75,14) and (15.25,12.25) .. (14,14.5) node[pos=0.5, fill=white]{T=1};
+\draw [->, >=Stealth] (7.75,17.25) .. controls (7.25,18) and (7.25,18.75) .. (7.5,19.5) ;
+\draw [->, >=Stealth] (4.5,18.25) .. controls (6,19) and (6,19) .. (7.25,19.75) node[pos=0.5, fill=white]{Reset};
+\node [font=\large, color={rgb,255:red,224; green,27; blue,36}] at (9,22.75) {$0=00_2$};
+\node [font=\large, color={rgb,255:red,224; green,27; blue,36}] at (13.75,22.75) {$1=01_2$};
+\node [font=\large, color={rgb,255:red,224; green,27; blue,36}] at (13.25,17.75) {$2=10_2$};
+\node [font=\large, color={rgb,255:red,224; green,27; blue,36}] at (9,17.5) {$3=11_2$};
+\draw [->, >=Stealth] (8,14.25) .. controls (6,13) and (4.75,15) .. (7,15.75) node[pos=0.5, fill=white]{T=1};
+\end{circuitikz}
+
+Mealy
+Considers input as part of what the output is going to be.
+
+
+*** 3. Create the Truthtables
+The MSB of the red numbers above is S_0 and the LSB is S_1
+
+
+*** 4. Assign Numbers to the States
+
+*** 5. Design the logic (Karnaugh Maps)
+
+** Types of State Machines
+
+
+*** Moore
+
+**** Rules & Error catching
+Every state needs an outputedge for every given input. So if you have S_1 and S_0, then every state needs these 2 outputs.
+
+Creating states and then connecting them can lead to Unreachable states. One way to avoid this is to create new States as you need them.
+
+Another one is checking if a state has an incount of 0 (reset counts as an incount). Incounts that come from the state itself do not count for this however.
+
+Number the states
+
+first:
+ep 65 truthtable
+and k map
+
+@todo add notes / screenshots
+ 
+
+*** Mealy 
+

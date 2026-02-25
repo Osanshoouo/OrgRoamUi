@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       cd117960-5d0c-44a9-983d-7f93c4045194
+:END:
+#+title: Data Buffering
+#+filetags: :@computerEngineering:@boat:
+

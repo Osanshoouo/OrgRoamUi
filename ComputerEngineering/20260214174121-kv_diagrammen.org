@@ -1,0 +1,7 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ID:       f9206309-2668-4d9f-8fd4-0d4035150d3b
+:END:
+#+title: KV-Diagrammen
+#+filetags: :@computerEngineering:@boat:
+

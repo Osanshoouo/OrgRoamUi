@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       80b3840c-eb91-4e15-9b3d-c3cf927bec65
+:END:
+#+title: Baud
+#+filetags: :@computerEngineering:@boat:
+

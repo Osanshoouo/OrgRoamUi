@@ -1,0 +1,98 @@
+:PROPERTIES:
+:NOTE_LEVEL: 3
+:ROAM_ALIASES: 
+:ID:       56e01cd2-598e-48d0-855e-afd2b8a42bf5
+:END:
+#+title: Checksums
+#+filetags: :@computerScience:@computerEngineering:@boat:
+
+* Checksums
+
+** The basic Checksum
+Based on datasum.
+
+It needs to be agreed upon what the word length is and wheter 1's complement or 2's complement is used for the datasum.
+
+
+String: Hello!
+Hex:    48,65,6c,6c,6f,21, xx 
+(with xx being two extra bytes, which are then replaced by 17)
+Hex:    48,65,6c,6c,6f,21, 17
+
+Sum of the hex values (checksum):
+\begin{displaymath}
+\begin{align}  
+ 48 + 65 &= AD \\
+ AD + 6c &= 119 \;\; - \text{The front one carry will be added back into the number} \\
+ 19 + 1  &= 1A \\
+ 1A + 6c &= 86 \\
+ 86 + 6f &= F5 \\
+ F5 + 21 &= 116 \;\; - \text{same adding as above} \\
+ 16 + 1  &= 17  \;\;\;\;  - \text{this is our data sum} \\
+\end{align}
+
+\end{displaymath}
+ 
+** 1's complement Checksum
+
+Bitwise Inverse of datasum.
+
+17  = 0010111
+~17 = 1101000
+
+Which is E8
+
+Now the receiver can just take the sum of the whole datastream + E8. This should result with the bit stream to be 1111 1111. So its an easy check
+
+** 2's complement Checksum
+Just take the Negative of the datasum. So we take the one's complement, which is 1101000 and add 1 to it. This will be 1101001, which is E9.
+
+So if you now sum all the datavalues (including the checksum) you should up with 0000 0000, 0. 
+
+** Note
+In this example the datawidth (word length) is to defined to be 2 bytes, but that doesnt have to be the case. For example TCP IP uses the 1 complement checksum with 2 bytes. So when you are adding these groups of 16 bits togher, you need to make sure that the data is sent in 16bit chunks. So of course then the addition will be 16 bit addition instead of 8.
+
+** Problem
+If you have a bit flip in one of the bytes, but a reverse one in the same column / position, then the checksum is still valid.
+
+For exampl:
+
+While adding
+
+0001
+1100
+
+you get the flips
+
+0101
+1000
+
+then the checksum is still valid and you wont know a bitflip occoured.
+
+
+Binary:       01001000 001100101 01101100 01101100 01101111 00100001
+Polynomial:   0x93 = ~10010011~
+The polynomial is basically a "Divisor"
+
+As the bits of the binary values come in, you wait until you get a byte with the MSB being 1. In our example this happens here:
+
+   01001000 01100101 01101100 01101100 01101111 00100001
+\oplus ~0100100  1~  
+   00000001 1
+          1 1110010
+       \oplus ~1 0010011~
+          0 1100001
+            11000011
+         \oplus ~10010011~
+            01010000
+             10100000
+          \oplus ~10010011~
+             00110011
+
+(Green for the Polynomial)
+
+So we move the [[id:c123a597-0093-4f34-9e20-e773d35ccdbd][Shift Register]] until the MSB is a 1 and then XOR the byte (1 and the following 7 bits) with the Polynomial and store the new value. We do this until the end of the datastream. The value we get in the end in a Pseudo Mod with the Polynomial an also our *CRC Checksum*.
+
+The highest value you can get for the result is the Length of the Polynomial-1. For example here the MSB is always gonna be 0 and drop away. This means the Polynomial will be a maximum of 7 bits.
+
+If you do one last bitwise XOR with the Remainder (the last mod value) you will get 0.

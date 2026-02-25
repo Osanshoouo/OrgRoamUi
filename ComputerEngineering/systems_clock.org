@@ -1,0 +1,9 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       887d7ea4-5c77-4450-a8a3-c1ded334a59c
+:END:
+#+title: Systems Clock
+#+filetags: :@computerEngineering:@boat:
+* Systems Clock
+

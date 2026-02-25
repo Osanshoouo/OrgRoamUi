@@ -1,0 +1,9 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       ec8577b8-eba4-4b9a-9f81-e652d32abeba
+:END:
+#+title: Base60 Counting
+#+filetags: :@computerEngineering:@boat:
+* Base60 Counting
+

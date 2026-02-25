@@ -1,0 +1,20 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ID:       abb9d4a9-d2ed-4abf-a008-06158c5928e1
+:END:
+#+title: Implikanten
+#+filetags: :@computerEngineering:@boat:
+
+In der [[id:e207e4c0-b3b4-4ee5-b891-bc3a56832fea][Booleschen Algebra]] und beim Entwurf von [[id:81661bb0-1662-4eaf-a7ad-bcc598d3f9fb][Schaltnetzen]] ist ein Implikant ~m~  einer booleschen Funktion ~f~ ein boolescher Term, wobei ~f~ immer wahr ist, wenn ~m~ wahr ist.
+
+Demnach impliziert die funktion ~f~ den Implikanten ~m~
+
+
+* Definition
+
+Sei:
+\(f\colon \{0,1\}^n \rightarrow \{0,1\},\,(x_1,\dotsc, x_n ) \mapsto f(x_1,\dotsc, x_n ) \)
+eine boolesche Funktion.
+
+Ein boolescher Term ~m~ heißt Implikant von ~f~ genau dann, wenn gilt
+\( \forall a \in \{0,1\}^n: m(a) \leq f(a) \)

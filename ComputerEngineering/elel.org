@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       c80fa840-bf30-4b65-bc23-bf4bf641cf40
+:END:
+:NODE_LEVEL: 1 
+ #+filetags: :@computerEngineering:@boat:
+
+* 2026-02-16: 08-42
+
+ ** elel
+

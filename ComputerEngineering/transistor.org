@@ -1,0 +1,11 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       dcea4bcc-9c0f-4255-87f5-15deeab8761b
+:END:
+#+title: Transistor
+#+filetags: :@computerEngineering:@boat:
+* Transistor
+The most fundamental [[id:3a2bde63-62ec-4ce9-bbbf-4ee8d1ad282a][Binary]] element. Given n Transisors, one may represent 2^n different states.
+
+from these facts, one can construct [[id:549f7460-0ca6-479d-99ab-89ba20881c3b][Logic Gates]].

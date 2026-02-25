@@ -1,0 +1,7 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ID:       3a96133e-6003-49c7-94bf-faa8b5d53de1
+:END:
+#+title: Konjunktionen
+#+filetags: :@computerEngineering:@boat:
+

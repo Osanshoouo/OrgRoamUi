@@ -1,0 +1,24 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       f7e69a1f-fce1-467d-81e4-438141039f06
+:END:
+#+title: Divide-by-Two Circuit
+#+filetags: :@computerEngineering:@boat:
+#+LATEX_HEADER: \usepackage{tikz-timing}
+#+LATEX_HEADER: \usepackage{circuitikz}
+
+* Divide-by-Two Circuit
+
+@todo create overview from Intermation ep60
+
+If D changes with the same speed as the clock speed, then the new value of D wont ne recognized
+
+The Divide-by-Two Circuit is a Rising Edge [[id:1ceebdce-8e6d-4dcc-97de-15da3dddee8c][D-Type Flip Flops]] with the \( \overline{Q} \) connected back into the D. This takes the input [[id:bb6bdf3e-5704-4261-bec7-d708ad46c5b4][Pulse Train]] and divides its frequency by two.
+
+\begin{tikztimingtable}[timing/draw grid]
+{Frequency:} & [green,timing/slope=0] 8{LH} \\
+{Q$_{0}$:} & [-,timing/slope=0]4{2L2H} \\
+{Q$_{1}$:} & [-,timing/slope=0]2{4L4H} \\
+\end{tikztimingtable}
+

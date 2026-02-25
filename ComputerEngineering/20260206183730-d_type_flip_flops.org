@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       1ceebdce-8e6d-4dcc-97de-15da3dddee8c
+:END:
+#+title: D-Type Flip Flops
+#+filetags: :@computerEngineering:@boat:
+
+A D-type [[id:2023b7f9-7805-4953-b72b-cccb9008fe56][Storage Register]], also known as a D [[id:3de89e57-1f05-4903-89bf-beeb225e3b52][Flip-Flop]], is a digital storage element that captures and holds a data input value at a specific moment in time, typically on the rising or falling edge of a clock signal. It is commonly used in sequential logic circuits for data storage, shift registers, and counters.

@@ -1,0 +1,9 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       ee05c84c-36f8-4174-84cf-cd1627162d39
+:END:
+#+title: The Manchester Baby
+#+filetags: :@computerEngineering:@boat:
+* The Manchester Baby
+

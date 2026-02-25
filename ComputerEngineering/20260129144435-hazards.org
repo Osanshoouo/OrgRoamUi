@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID:       90306fa9-1c1c-46f7-a327-02cd02e3ec91
+:NOTE_LEVEL: 1
+:ROAM_REFS: https://electrically4u.com/hazards-in-digital-circuits/
+:END:
+#+title: Hazards
+#+filetags: :@computerEngineering:@boat:
+
+** Static and Dynamic Hazards
+
+Static Hazards mean such cases where the input changes but the output should stay the same but doenst. 
+
+When the input to the logic circuit changes, the output has to remain at a particular logic, but instead it may change its value momentarily. If this happens in the logic circuit, then there exists a static hazard.
+
+The static hazard can be classified as a static-0 hazard and static-1 hazard. Instead of remaining at logic 1, the output goes to logic 0 momentarily, then it is a static-1 hazard. Similarly, if the output monetarily goes to logic 1, instead of remaining at 0, it is a static-0 hazard.
+
+A hazard is said to be dynamic if the output changes two or more times when it should change from 1 to 0 or from 0 to 1.
+
+
+** Ursachen:
+** Funktions - Hazards
+*** Loesung
+**** Flip-Flops
+** Struktur / Logik - Hazards
+*** Ursachen
+**** Meist mehrere Stufen von Logik
+**** Verzweigung der Eingangssignale
+**** Zusammenlaufen von Signalen
+**** Laufzeitunterschiede
+*** Loesung
+**** Redundante Primimplikation
+**** Flip-Flops

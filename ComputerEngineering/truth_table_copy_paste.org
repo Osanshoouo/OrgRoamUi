@@ -1,0 +1,23 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       08eaab4d-0521-4943-b16c-fee4676ce017
+:END:
+#+title: Truth Table Copy Paste
+#+filetags: :@computerEngineering:@boat:
+* Truth Table Copy Paste
+
+
+
+
+| A | B | C |   |
+|---+---+---+---|
+| 0 | 0 | 0 |   |
+| 0 | 0 | 1 |   |
+| 0 | 1 | 0 |   |
+| 0 | 1 | 1 |   |
+| 1 | 0 | 0 |   |
+| 1 | 0 | 1 |   |
+| 1 | 1 | 0 |   |
+| 1 | 1 | 1 |   |
+

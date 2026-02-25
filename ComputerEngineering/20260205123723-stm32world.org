@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       cbf13d80-2097-4345-a3c0-d81854d0e522
+:END:
+#+title: STM32World
+
+* STM32World
+
+** STM32 Getting Started Tutorial                     :@computerEngineering:
+:LOGBOOK:
+CLOCK: [2026-02-13 Fri 17:29]--[2026-02-13 Fri 18:00] =>  0:31
+CLOCK: [2026-02-05 Thu 18:28]--[2026-02-05 Thu 18:47] =>  0:19
+CLOCK: [2026-02-05 Thu 17:15]--[2026-02-05 Thu 18:23] =>  1:08
+CLOCK: [2026-02-05 Thu 12:37]--[2026-02-05 Thu 12:40] =>  0:03
+:END:
+
+
+
+*** How to find information

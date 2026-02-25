@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       2ecaa07d-d507-4bc6-b248-01c53d9cb3a4
+:NOTE_LEVEL: 1
+:END:
+#+title: Halbleitertechnik
+#+filetags: :@computerEngineering:@boat:
+

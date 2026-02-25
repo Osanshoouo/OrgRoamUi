@@ -1,0 +1,9 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       f3d41e90-c090-4d42-a3c0-06724b215aa8
+:END:
+#+title: Encoder
+#+filetags: :@computerEngineering:@boat:
+* Encoder
+

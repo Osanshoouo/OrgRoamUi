@@ -1,0 +1,69 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       a2b71cc4-dcdf-4e0a-ad11-9a3cdd0c3675
+:END:
+#+title: IEEE-754 Notation
+#+filetags: :@computerEngineering:@boat:
+
+* IEEE-754 Notation
+The IEEE-754 is the standard for Folating Point Values in Binary. (32-Bits and 64-Bits)
+
+In Scientific Notation every number has
+
+1. A positive or negative sign
+2. One digit between 1 and 9
+3. Decimal point
+4. significant digits after the decimal point
+5. Base
+6. Exponent
+
+   For example: 3.0 \times 10^8 or 6.02 \times 10^23
+
+
+[[id:93faea5e-d453-42e5-8c6c-3612440d288a][Bit Arithmatics]] - Bit shifting
+
+The decimal point is what separates the positive powers from the negative powers of two. If you do this shifting on a number in [[id:45ebf03e-b4d9-4753-848b-e0c23bc6a3e1][Fixed Point Notation]] then that works without problem as well.
+
+But what if the Number has more digits than we 32 / 64?. Since the decimal point is fixed, we would have a fixed amount of digits before and after.
+
+If I now want to shift the decimal point to the left by 11, then you need to multiply the number by 2^11. This means you can just store these parts in the computer.
+
+The base in omitted, since its a given that the base is 2.
+
+In the registers the sorting is based on the significance on the size of the value (for sake of comparison)
+
+|          | Signed Bit | Exponent | Fraction                           |   |
+|----------+------------+----------+------------------------------------+---|
+| float32: | 1 bit      | 8 bits   | 23 bits (padding with 0 if needed) |   |
+| float64: | 1 bit      | 11 bits  | 52 bits                            |   |
+
+
+
+Since [[id:0ccaa3a2-8f5d-4ffd-8e43-76204facbb6c][Biased-N Binary Representation]] gives us a quick way to compare values (compared to [[id:35230ea4-4c3a-46ba-8e55-484688702c48][Two's complement]] for example), in 32 bit floats we can use them for the Exponent.
+
+In the case of 32-bit floats, Biased-127 is used. 
+For 64-bits, Biased-1023 is used instead.
+
+So you get the formula:
+\( \pm1.F\times2^{E-127} \)
+
+We represent 0 by making E and F and 0. Since that is the smallest we can get.
+
+To ge infinty on the other hand, we make E all 1's. If F is all 0's, thats actually infinity. If F is anything else but 0, this is called NaN - Not a Number.
+
+** For example
+
+Number: -101001011011.11
+-1.0100101101111 \times 2^11
+
+1. the sign "-"
+2. the digit
+3. the fraction
+4. the exponent
+
+
+|          | Signed Bit | Exponent | Fraction          |   |
+|----------+------------+----------+-------------------+---|
+| float32: | 1          | 10001010 | 0100101101111...0 |   |
+| float64: | 1 bit      | 11 bits  | 52 bits           |   |

@@ -1,0 +1,9 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       37c31ec1-8e84-4fdd-a475-de81832271f2
+:END:
+#+title: Carry-Lookahead-Circuit
+#+filetags: :@computerEngineering:@boat:
+* Carry-Lookahead-Circuit
+

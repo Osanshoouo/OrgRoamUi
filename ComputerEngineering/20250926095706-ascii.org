@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       08fa36a0-46b7-422e-8137-e1377c7b552c
+:ROAM_ALIASES: "ASCII Character Encoding"
+:END:
+#+title: ASCII
+#+filetags: :@computerEngineering:@boat:
+
+* ASCII
+American Standard Code for Information Interchange is one of the oldest [[id:dbc0fe62-fbb7-460c-b81c-cddc6fa24dfd][Codepoints]] to date. It is, as its name implies, made for encoding the English Alphabet.
+
+It uses 7 bits, which are usually stored in a byte. The Symbols theselves are sorted by The 3 MSB and the 4 LSB as two nibbles, with the former having a 0 as padding (so you could just store them as bytes).
+
+The MSB is always 0. The next two decide the type of Character that is encoded. For example:
+
+ * 00 - Control
+ * 01 - Punctuations and Numbers / Digits
+ * 10 - Uppercase Letters (and some extras)
+ * 11 - Lowercase Letters (and some extras)
+   * so you can just change the 3rd bit to go from upper to lower case and vice versa
+
+
+ 
+There is also Extended ASCII which uses the MSB to get a total of 256 different characters and symbols.

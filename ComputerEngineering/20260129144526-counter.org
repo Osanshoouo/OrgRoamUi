@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       bbdb029e-f37e-4aa5-88d2-cdabe73ee645
+:NOTE_LEVEL: 1
+:END:
+#+title: Counter
+#+filetags: :@computerEngineering:@boat:
+

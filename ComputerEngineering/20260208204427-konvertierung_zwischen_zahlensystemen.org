@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       cb495f9b-ccec-45db-8024-7de4e7f51058
+:END:
+#+title: Konvertierung zwischen Zahlensystemen
+#+filetags: :@computerEngineering:@boat:
+
+[[id:45a94c6c-8cf0-4b8e-bdee-c92f0b0444bb][Hornerschema]]
+
+
+Hinweis
+– Je größer die Basis des Zielsystems ist, desto schneller konvergiert das
+Konvertierungsverfahren.
+– Falls das Zielsystem das Dualsystem ist, empfiehlt es sich deshalb,
+zunächst ins Hexadezimalsystem (oder ins Oktalsystem) zu konvertieren
+und das so gewonnene Zwischenergebnis in eine Dualzahl
+umzuschreiben

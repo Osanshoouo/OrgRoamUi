@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       ac0bf5e2-c529-454c-b011-3ad8c69b8d08
+:NOTE_LEVEL: 1
+:END:
+#+title: Registers
+#+filetags: :@computerEngineering:@boat:
+
+Just groups of [[id:1ceebdce-8e6d-4dcc-97de-15da3dddee8c][D-Type Flip Flops]]
+
+** Program Counter / Instruction Pointer
+
+** Instruction Register / Instruction Pointer
+
+** Status / Flag Register

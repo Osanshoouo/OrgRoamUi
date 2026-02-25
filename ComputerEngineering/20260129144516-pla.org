@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       c2bcffec-010d-44e0-9c4d-405460e4a19e
+:NOTE_LEVEL: 2
+:ROAM_ALIASES: "Programmable Logic Array"
+:END:
+#+title: PLA
+#+filetags: :@computerEngineering:@boat:
+
+A programmable logic array (PLA) is a kind of programmable logic device used to implement combinational logic circuits. The PLA has a set of programmable AND gate planes, which link to a set of programmable OR gate planes, which can then be conditionally complemented to produce an output. It has 2N AND gates for N input variables, and for M outputs from the PLA, there should be M OR gates, each with programmable inputs from all of the AND gates. This layout allows for many logic functions to be synthesized in the sum of products canonical forms.
+
+[[file:/home/steve/OrgVault/images/computerEngineering/Programmable_logic_array_(schematic_drawing_example).svg.png]]
+

@@ -1,0 +1,7 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ID:       cc998d1a-5667-463f-bc42-953533345828
+:END:
+#+title: Minterme
+#+filetags: :@computerEngineering:@boat:
+

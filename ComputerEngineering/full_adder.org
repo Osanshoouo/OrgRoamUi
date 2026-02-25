@@ -1,0 +1,76 @@
+:PROPERTIES:
+:NOTE_LEVEL: 2
+:ROAM_ALIASES: 
+:ID:       e519d9f0-7e2b-4f97-842c-183ea4d6a4b4
+:END:
+#+title: Full Adder
+#+filetags: :@computerEngineering:@boat:
+* Full Adder
+
+To do nbit addition. You have One [[id:7c89f5cb-726d-448b-8989-584c9d3a0960][Half Adder]] and then n-1 FullAdders. This is a ripple-carry-adder. Because the carry ripples through the circuit. You may also have a [[id:37c31ec1-8e84-4fdd-a475-de81832271f2][Carry-Lookahead-Circuit]] on top of it, creating a Carry-Lookahead-Adder. This creates the A and B values for any bit in one circuit. So for 8 bits thats 16 Variables.
+
+
+| A | B | C | Sum | Carry |
+|---+---+---+-----+-------|
+| 0 | 0 | 0 |   0 |     0 |
+| 0 | 0 | 1 |   1 |     0 |
+| 0 | 1 | 0 |   1 |     0 |
+| 0 | 1 | 1 |   0 |     1 |
+| 1 | 0 | 0 |   1 |     0 |
+| 1 | 0 | 1 |   0 |     1 |
+| 1 | 1 | 0 |   0 |     1 |
+| 1 | 1 | 1 |   1 |     1 |
+
+
+
+S:
+\begin{tikcd}
+\begin{karnaugh-map}(label=corner)[2][4][1][$C$][$B$][$A$]
+\terms{0}{0}
+\terms{1}{1}
+\terms{2}{1}
+\terms{3}{0}
+\terms{4}{1}
+\terms{5}{0}
+\terms{6}{0}
+\terms{7}{1}
+\implicant{1}{1}
+\implicant{2}{2}
+\implicant{7}{7}
+\implicant{4}{4}
+\end{karnaugh-map}
+\end{tikcd}
+
+Top to bottom:
+\( \overline{A} \: \overline{B} C\)
+\( \overline{A} B \overline{C}\)
+\(A B C  \)
+\( A \overline{B} \overline{B}\)
+
+Then just take the sum (cant be bothered)
+
+
+Carry_out:
+\begin{tikcd}
+\begin{karnaugh-map}(label=corner)[2][4][1][$C$][$B$][$A$]
+\terms{0}{0}
+\terms{1}{0}
+\terms{2}{0}
+\terms{3}{1}
+\terms{4}{0}
+\terms{5}{1}
+\terms{6}{1}
+\terms{7}{1}
+\implicant{3}{7}
+\implicant{6}{7}
+\implicant{7}{5}
+\end{karnaugh-map}
+\end{tikcd}
+
+3 groups, so 3 Products:
+\(Yellow: A C\)
+\(Green: A B\)
+\(Red: B C\)
+
+so the expression is
+\( AB + AC + BC \)

@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       661a8354-0929-4218-a49d-390962041b9f
+:NOTE_LEVEL: 1
+:END:
+#+title: CMOS-Technik
+#+filetags: :@computerEngineering:@boat:
+

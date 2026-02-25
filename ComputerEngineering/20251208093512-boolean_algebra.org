@@ -1,0 +1,181 @@
+:PROPERTIES:
+:ID:       e207e4c0-b3b4-4ee5-b891-bc3a56832fea
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: "Boolesche Algebra"
+:END:
+#+title: Boolean Algebra
+#+filetags: :@computerEngineering:@boat:
+
+* Boolean Algebra
+** Boolean Algebra Order of Operations
++ Parenthesis
++ Inverses
++ Product
++ Sums
+
+ \( X = \overline{A} \cdot \overline{B} + B \cdot C\)
+  
+| A | B | C |   | \not A | \not C | \not(A)\cdot\not(C) | B \cdot C | \not(A)\cdot\not(C) + B \cdot C |
+|---+---+---+---+-----+-----+-----------+-------+-------------------|
+| 0 | 0 | 0 |   |   1 |   1 |         1 |     0 |                 1 |
+| 0 | 0 | 1 |   |   1 |   0 |         0 |     0 |                 0 |
+| 0 | 1 | 0 |   |   1 |   1 |         1 |     0 |                 1 |
+| 0 | 1 | 1 |   |   1 |   0 |         0 |     1 |                 1 |
+| 1 | 0 | 0 |   |   0 |   1 |         0 |     0 |                 0 |
+| 1 | 0 | 1 |   |   0 |   0 |         0 |     0 |                 0 |
+| 1 | 1 | 0 |   |   0 |   1 |         0 |     0 |                 0 |
+| 1 | 1 | 1 |   |   0 |   0 |         0 |     1 |                 1 |
+
+Circuit:
+[[file:/home/steve/OrgVault/images/computerEnginnering/basic_circuit_example_with_and_and_or.png]]
+
+** Optimization
+
+Proof can be done Exhaustively through Truth Tables, showing by exhaustive proof that two circuits / expressions are identical.
+
+Basic example:
+
+[[file:/home/steve/OrgVault/images/computerEnginnering/simplification_of_circuits_basic_example.png]]
+
+The same output
+lower circuit:
+
++ Faster
++ Less Power
++ Less physical Space
++ Costs Less
+
+** Identities of Boolean Algebra
++ [[id:51871534-24f3-4d0b-b6bb-ead8c18e4e2e][Mathematical Indentities]]
+
+*** Proof by truthtable
+|     | w/self             | w/inverse   | w/1         | w/0       |
+|-----+--------------------+-------------+-------------+-----------|
+| AND | A \cdot A = A          | A \cdot \not A = 0 | A \cdot 1 = A   | A \cdot 0 = 0 |
+| OR  | A + A = A          | A + \not A = 1 | A + 1 = 1   | A + 0 = A |
+| XOR | A \oplus A = 0          | A \oplus \not A = 1 | A \oplus 1 = \not A | A \oplus 0 = A |
+|     |                    |             |             |           |
+|     | (this is how you   |             |             |           |
+|     | do it in assembly) |             |             |           |
+
+
+| A | A \cdot A     | A \cdot \neg A   | A \cdot 1     | w/0       |
+|---+-----------+-----------+-----------+-----------|
+| 0 | 0 \cdot 0 = 0 | 1 \cdot 1 = 0 | 0 \cdot 1 = 0 | 0 \cdot 0 = 0 |
+| 1 | 1 \cdot 1 = 1 | 1 \cdot 0 = 0 | 1 \cdot 1 = 1 | 1 \cdot 0 = 0 |
+|   |           |           |           |           |
+
+| A | A + A     | A + \neg A   | A + 1     | w/0       |
+|---+-----------+-----------+-----------+-----------|
+| 0 | 0 + 0 = 0 | 0 + 1 = 1 | 0 + 1 = 0 | 0 + 0 = 0 |
+| 1 | 1 + 1 = 1 | 1 + 0 = 1 | 1 + 1 = 1 | 1 + 0 = 1 |
+|   |           |           |           |           |
+
+
+| A | B | XOR - Output |
+|---+---+--------------|
+| 0 | 0 |            0 |
+| 0 | 1 |            1 |
+| 1 | 0 |            1 |
+| 1 | 1 |            0 |
+
+*** Reasoning
+These are our *"Red Flags"*. If we see any of them, that means we can move things around to simplify the expression and thus the given circuit.
+Any time there is a constant, you know automatically that you can simplify and cancel something out.
+
+
+** Properties of Boolean Algebra
+
+*** Commutative Law:
+A + B = B + A
+A \cdot B = B \cdot A
+
+*** Associative Law
+A + (B + C) = (A + B) + C
+A \cdot (B \cdot C) = (A \cdot B) \cdot C
+
+*** Distributive Law
+A \cdot (B + C) =  A \cdot B  +  C \cdot A
+A +  B \cdot C  = (A + B) \cdot (A + C)
+
+**** Proof by Truthtable
+| A | B | C |   | (B + C) | A \cdot (B + C) | = | A \cdot B | A \cdot C | A \cdot B + A \cdot C |
+|---+---+---+---+---------+-------------+---+-------+-------+---------------|
+| 0 | 0 | 0 |   |       0 |           0 |   |     0 |     0 |             0 |
+| 0 | 0 | 1 |   |       1 |           0 |   |     0 |     0 |             0 |
+| 0 | 1 | 0 |   |       1 |           0 |   |     0 |     0 |             0 |
+| 0 | 1 | 1 |   |       1 |           0 |   |     0 |     0 |             0 |
+| 1 | 0 | 0 |   |       0 |           0 |   |     0 |     0 |             0 |
+| 1 | 0 | 1 |   |       1 |           1 |   |     0 |     1 |             1 |
+| 1 | 1 | 0 |   |       1 |           1 |   |     1 |     0 |             1 |
+| 1 | 1 | 1 |   |       1 |           1 |   |     1 |     1 |             1 |
+
+(the following only works in boolean algebra, but not regular algebra)
+
+\begin{math}
+ A + B \cdot C = (A + B) \cdot (A + C)
+
+ = (A + B) \cdot A + (A + B) \cdot C 
+
+ = A \cdot A + A \cdot B + A \cdot C + B \cdot C
+ 
+ = A + A \cdot B + A \cdot C + B \cdot C \\
+
+ add identity:
+
+= A \cdot 1 + A \cdot C + B \cdot C \\
+
+= A \cdot (1 + B + ) + B \cdot C
+
+ \text{since there is a 1 in the parenthesis, the value inside will always be 1} \\
+ 
+ = A \cdot 1 + B \cdot C \\
+
+remove identity:
+
+ = A + B \cdot C
+\end{math}
+
+
+*** DeMorgan's Law
+\( \overline{A \cdot B} \ne \overline{A} \cdot \overline{B} \)
+
+however:
+
+\( \overline{A \cdot B} = \overline{A} + \overline{B} \)
+
+as well as
+
+\( \overline{A + B} = \overline{A} \cdot \overline{B} \)
+
+
+| A | B | \( \overline{A \cdot B}\) |   | \not A | \not B | \( \overline{A} + \overline{B} \)     |
+|---+---+-----------------------+---+-----+-----+-----------------------------------|
+| 0 | 0 |                     1 |   |   1 |   1 |                                 1 |
+| 0 | 1 |                     1 |   |   1 |   0 |                                 1 |
+| 1 | 0 |                     1 |   |   0 |   1 |                                 1 |
+| 1 | 1 |                     0 |   |   0 |   0 |                                 0 |
+
+
+
+| A | B | \( \overline{A + B}\) |   | \not A | \not B | \( \overline{A} \cdot \overline{B} \) |
+|---+---+-----------------------+---+-----+-----+-----------------------------------|
+| 0 | 0 |                     1 |   |   1 |   1 |                                 1 |
+| 0 | 1 |                     0 |   |   1 |   0 |                                 0 |
+| 1 | 0 |                     0 |   |   0 |   1 |                                 0 |
+| 1 | 1 |                     0 |   |   0 |   0 |                                 0 |
+
+
+**** Visual Representation
+
+[[file:/home/steve/OrgVault/images/computerEnginnering/de_morgans_theorem_example_circuit.png]]
+
+*** Extra
+
++ \(A + \overline{A} \cdot B = A + B  \)
++ \(A + A \cdot B = A  \)
+  + since
+    + A \cdot 1 + A \cdot B
+    + A \cdot (1 + B)
+    + A \cdot 1
+    + A

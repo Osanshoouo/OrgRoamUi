@@ -1,0 +1,15 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       ef2c7156-ea4e-4c03-be0a-99792297fda4
+:END:
+#+title: Arithmatics in Binary
+#+filetags: :@computerEngineering:@boat:
+* Arithmatics in Binary
+
+** Basic Addition and Subtraction
+Both just like in Decimal
+
+
+** Division and Multiplication
+

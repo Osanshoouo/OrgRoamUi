@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       29147639-62c5-4c19-ab1c-3e6e8ab6eaf0
+:NOTE_LEVEL: 1
+:END:
+#+title: Code-Umsetzer
+#+filetags: :@computerEngineering:@boat:
+
+
+[[id:a86abeca-5569-4c9c-9cf6-9a5f8888f14a][Pseudotetraden]]
+
+[[id:1c9ceecf-7b30-416b-9bdb-8205672e1a8d][Primimplikanten]]

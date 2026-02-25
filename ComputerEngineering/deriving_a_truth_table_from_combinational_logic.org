@@ -1,0 +1,33 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       80b01418-19ea-4f12-a355-804bd7b7f103
+:END:
+#+title: Deriving a Truth Table from Combinational Logic
+#+filetags: :@computerEngineering:@boat:
+* Deriving a Truth Table from Combinational Logic
+
+To create a Truthtable for 4 Variables, you can do the following:
+Given all possible values of nibbles in binary, you can conclude that in the MSB place, half of them start with 0 and half of them start with 1.
+For the next lower place its 4x0 followed by 4x1.
+Then alternating 2x0 and 2x1 and then just alternating 0 and 1.
+This gives you every possble combination.
+
+| A | D | M | G |   | D+M | A\cdot(D+M) | A\cdot(D+M) + G |
+|---+---+---+---+---+-----+---------+-------------|
+| 0 | 0 | 0 | 0 |   |   0 |       0 |           0 |
+| 0 | 0 | 0 | 1 |   |   0 |       0 |           1 |
+| 0 | 0 | 1 | 0 |   |   1 |       0 |           0 |
+| 0 | 0 | 1 | 1 |   |   1 |       0 |           1 |
+| 0 | 1 | 0 | 0 |   |   1 |       0 |           0 |
+| 0 | 1 | 0 | 1 |   |   1 |       0 |           1 |
+| 0 | 1 | 1 | 0 |   |   1 |       0 |           0 |
+| 0 | 1 | 1 | 1 |   |   1 |       0 |           1 |
+| 1 | 0 | 0 | 0 |   |   0 |       0 |           0 |
+| 1 | 0 | 0 | 1 |   |   0 |       0 |           1 |
+| 1 | 0 | 1 | 0 |   |   1 |       1 |           1 |
+| 1 | 0 | 1 | 1 |   |   1 |       1 |           1 |
+| 1 | 1 | 0 | 0 |   |   1 |       1 |           1 |
+| 1 | 1 | 0 | 1 |   |   1 |       1 |           1 |
+| 1 | 1 | 1 | 0 |   |   1 |       1 |           1 |
+| 1 | 1 | 1 | 1 |   |   1 |       1 |           1 |

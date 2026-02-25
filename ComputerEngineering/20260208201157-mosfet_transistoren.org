@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       bc2b6f0b-1b0b-4451-a457-5f3ed1a4d441
+:NOTE_LEVEL: 1
+:END:
+#+title: MOSFET-Transistoren
+#+filetags: :@computerEngineering:@boat:
+

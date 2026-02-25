@@ -1,0 +1,227 @@
+:PROPERTIES:
+:ID:       8e46030b-6086-4e1b-9b64-ea4899a1c832
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: "Karnaugh Map"
+:END:
+#+title: Karnaugh-Diagramme
+#+filetags: :@computerEngineering:@boat:
+
+
+* Karnaugh Maps
+
+\begin{tikcd}
+\begin{karnaugh-map}[4][4]
+\implicant{9}{10}
+\implicantcorner[0,2]
+\indeterminants{0,5}
+\end{karnaugh-map}
+\end{tikcd}
+
+
+* Optimization
+
+*** Minimization
+Boolean Laws can be used to decrease the number of logic gates needed for a circuit. However as the number of Parameters and Logic Connections increase, this gets exponentially harder.
+
+You can also be certain in this case, that the boolean expression is actually minimal. Thats wher the Karnaugh Map comes in.
+
+
+
+*** Karnaugh Map basics
+[[id:cc998d1a-5667-463f-bc42-953533345828][Minterme]]
+
+
+
+
+*** Rules for makin' Karnaugh Maps
+
+the neighbouring cells only differ by one input variable, so we need to use gray code for these.
+Gray code is also cyclic, this means the bottom and top row are connected (you loop if you go over the top or bottom)
+
+
+when A 1 as another 1 next to it, that means that there is a way to simplify. If there are only 0's around a 1, its cant
+be simplified.
+
+A karnaugh is a improved representation of the truth table. It has the same information + some extra
+
+
+rules for makin' Rectangles
+
+Every Rectangle create one product, so we need to make sure to generate a rectangle for every 1 in the map.
+
+1) All 1's in the K-Map must be covered by at least rect.
+2) The number of cell covered by the rect. must be a power of to eg. 1,2,4,8,...
+3) Rectangles may overlap but, every rect. must have at least one cell unique to it.
+4) No rect. can contain a zero
+5) Rect. may cross from the top-bottom and left to right.
+6) Make rect. as large as possible
+
+
+
+Example:
+\begin{tikcd}
+\begin{karnaugh-map}(label=corner)[2][4][1][$C$][$B$][$A$]
+\terms{0}{0}
+\terms{1}{1}
+\terms{2}{1}
+\terms{3}{1}
+\terms{4}{0}
+\terms{5}{1}
+\terms{6}{1}
+\terms{7}{0}
+\implicant{1}{3}
+\implicant{2}{6}
+\implicantedge{1}{1}{5}{5}
+\end{karnaugh-map}
+\end{tikcd}
+
+
+ * Green:
+   * C = 0
+   * B = 1
+   * A is variable
+     * so we get \(B \overline{C}  \)
+ * Red:
+   * A = 0 
+   * C = 1
+   * B is variable
+     * so we get \( \overline{A}C\)
+ * Yellow:
+   * B = 0
+   * C = 1
+     * so we get \( \overline{B}C\)
+
+
+ So the final expression is:
+
+ \( X = B \overline{C} + \overline{A} C + \overline{B}C   \)
+
+ 
+
+*** Working with 4x4 Karnaugh Maps
+
+Since each Cell has only 4 edges, we can only have 4 variables. So the Maximum size for a Karnaugh map in 2D is 4x4.
+
+Example:
+\begin{tikcd}
+\begin{karnaugh-map}(label=corner)[4][4][1][$D$][$C$][$B$][$A$]
+\terms{0}{1}
+\terms{1}{1}
+\terms{2}{1}
+\terms{3}{0}
+\terms{4}{1}
+\terms{5}{1}
+\terms{6}{1}
+\terms{7}{1}
+\terms{8}{0}
+\terms{9}{1}
+\terms{10}{0}
+\terms{11}{0}
+\terms{12}{0}
+\terms{13}{0}
+\terms{14}{0}
+\terms{15}{0}
+\implicant{0}{5}
+\implicant{4}{6}
+\implicantedge{0}{4}{2}{6}
+\implicantedge{1}{1}{9}{9}
+\end{karnaugh-map}
+\end{tikcd}
+
+
+since the red one is redundant, we can remove it:
+
+\begin{tikcd}
+\begin{karnaugh-map}(label=corner)[4][4][1][$D$][$C$][$B$][$A$]
+\terms{0}{1}
+\terms{1}{1}
+\terms{2}{1}
+\terms{3}{0}
+\terms{4}{1}
+\terms{5}{1}
+\terms{6}{1}
+\terms{7}{1}
+\terms{8}{0}
+\terms{9}{1}
+\terms{10}{0}
+\terms{11}{0}
+\terms{12}{0}
+\terms{13}{0}
+\terms{14}{0}
+\terms{15}{0}
+\implicant{4}{6}
+\implicantedge{0}{4}{2}{6}
+\implicantedge{1}{1}{9}{9}
+\end{karnaugh-map}
+\end{tikcd}
+
+*** Green:
+ABCD
+
+Since BC and are any possible combination, they are redundant. As long as A and D are 0
+\( \overline{A} \overline{D}\)
+
+| A | B | C | D |
+|---+---+---+---|
+| 0 | 0 | 0 | 0 |
+| 0 | 1 | 0 | 0 |
+| 0 | 0 | 1 | 0 |
+| 0 | 1 | 1 | 0 |
+
+
+*** Red
+
+It goes over any Options of CD, so A and B are relevant, so in since A stays 0 and B a 1, the term is \( \overline{A} B \)
+
+*** Yellow
+B stays 0
+A is variable
+C stays 0
+D stays 1
+
+\( \overline{B} \; \overline{C} D  \)
+
+*** Expression
+
+\( X = \overline{A} \overline{D} + \overline{A} \overline{B} + \overline{B} \overline{C} D     \)
+
+Dont pull out the \neg{}A here, since that would turn this 2-layer-logic ciruit (given by the [[id:1553ba21-3f8a-4341-a29c-1afe1d799d64][Sum-Of-Products Expression]]) into a 3-layer-logic circuit.
+
+
+** Don't Cares / Wildcards
+
+| A | B | C | X |
+|---+---+---+---|
+| 0 | 0 | 0 | 1 |
+| 0 | 0 | 1 | 1 |
+| 0 | 1 | 0 | 0 |
+| 0 | 1 | 1 | 0 |
+| 1 | 0 | 0 | 1 |
+| 1 | 0 | 1 | X |
+| 1 | 1 | 0 | X |
+| 1 | 1 | 1 | 0 |
+
+
+Have the Most benefit in Karnaugh maps
+
+Example:
+\begin{tikcd}
+\begin{karnaugh-map}(label=corner)[2][4][1][$C$][$B$][$A$]
+\terms{0}{1}
+\terms{1}{1}
+\terms{2}{0}
+\terms{3}{0}
+\terms{4}{1}
+\terms{5}{X}
+\terms{6}{X}
+\terms{7}{0}
+\implicant{6}{6}
+\implicantedge{0}{1}{4}{5}
+\end{karnaugh-map}
+\end{tikcd}
+
+The X's will be something in Real life, so we just do the best cases. The X in 110 (red rectangle) for example would best be a 0.
+
+From this you take the green rectangle. B = 0 and the rest is variable, so the expression simplifies to \( \overline{B}  \)
+
+[[id:7c89f5cb-726d-448b-8989-584c9d3a0960][Half Adder]] example

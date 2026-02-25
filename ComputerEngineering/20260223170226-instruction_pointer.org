@@ -1,0 +1,9 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       564b2716-f090-4e7d-b304-e7206a81cd23
+:END:
+#+title: Instruction Pointer
+#+filetags: :@computerEngineering:@boat:
+* Instruction Pointer
+

@@ -1,0 +1,7 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       4159a8ec-edc1-4c14-a9b0-0188281c0807
+:END:
+#+title: Bit Multipliation
+#+filetags: :@computerEngineering:@boat:

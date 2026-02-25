@@ -1,0 +1,39 @@
+:PROPERTIES:
+:ID:       3a2bde63-62ec-4ce9-bbbf-4ee8d1ad282a
+:NOTE_LEVEL: 1
+:END:
+#+title: Binary
+#+filetags: :@computerEngineering:@boat:
+
+
+SI-Präfixe (DIN 1301) vs. Binärpräfixe (IEC 60027-2)
+
+
+Mit n Binärsignalen lassen sich
+– 2n Werte oder Zeichen repräsentieren
+• Umgekehrt für m Zeichen werden
+– log2 m = ld m Bit benötigt
+• Eine mögliche Redundanz bestimmt sich zu
+R = 2n – m
+
+• Darstellung von ganzzahligen Werten
+xx$Z = \sum_{i=0}^{n-1 }a_i b^i$ mit $a \in {0,1,\dots,b-1}$
+
+• Bsp.: 111 1110 10002 (b = 2) bzw. 202410 (b = 10)
+
+
+nachkommastellen
+$Z = \sum_{i=-m}^{-1 }a_i b^i$ mit $a \in {0,1,\dots,b-1}$
+
+
+[[id:45a94c6c-8cf0-4b8e-bdee-c92f0b0444bb][Hornerschema]]
+
+* Decoding
+You never know what a given sequence of binary represents it might be any number of representations like:
+
+1. [[id:eb1a3e89-07ad-437b-aa12-e501af655878][Unsigned Binary]]
+2. [[id:35230ea4-4c3a-46ba-8e55-484688702c48][Two's complement]]
+3. [[id:bb189bb3-4bdb-42b8-98c3-cd7f17fcc9d7][One's complement]]
+4. [[id:aaef1033-70ff-4d8f-867a-2514b0848717][BCD]]
+5. [[id:627f578f-42ef-442f-beae-0df4a55c38f4][Gray Code]]
+6. Output of an [[id:6891030f-faa2-4cb7-a4e0-20e6add50ed7][Analog-Digital Converter]]

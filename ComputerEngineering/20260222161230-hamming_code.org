@@ -1,0 +1,131 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       66f86d2e-0d82-41f7-9df3-7f0b320f5321
+:END:
+#+title: Hamming Code
+#+filetags: :@computerEngineering:@boat:
+
+* Hamming Code
+SEC Single error correction
+DED double error detection
+
+Along with the data we store check bits. This is where [[id:9370137c-47c8-49ab-a3c5-033944e0a7ad][Parity]] comes in.
+
+4 bits and 3 Parity bits (even parity):
+
+|          | D_3 | D_2 | D_1 | D_0 |   | P_2 | P_1 | P_0 |
+|----------+----+----+----+----+---+----+----+----|
+| Original |  1 |  0 |  1 |  0 |   |  0 |  0 |  1 |
+| Flipped  |  1 |  0 |  0 |  0 |   |  0 |  1 |  0 |
+
+
+
+Set the parity bits so that we know which bits were flipped in the data:
+
+
+Original:
+P_0 = D_0 \oplus D_1 \oplus D_3
+P_1 = D_1 \oplus D_2 \oplus D_3
+P_2 = D_0 \oplus D_2 \oplus D_3
+
+P_0 = 1 \oplus 1 \oplus 1 = 1
+P_1 = 1 \oplus 0 \oplus 1 = 0
+P_2 = 1 \oplus 0 \oplus 1 = 0
+
+Bit-Flipped
+
+P_0 = 1 \oplus 0 \oplus 1 = 0
+P_1 = 0 \oplus 0 \oplus 1 = 1
+P_2 = 1 \oplus 0 \oplus 1 = 0
+
+
+So P_0 and P_1 changed but not P_2. If we look which bits are in P_1 and P_0 but not in P_2 we see that D_1 is in both of them but not P_2. This means the bit flip occoured in the Data bit 1.
+
+Checking the difference between P and P\prime can be done with XOR again. A way easier way to do it as a human however is to do it with a venn diagram.
+
+[[file:/home/steve/OrgVault/images/computerEnginnering/parity_check_with_venn_diagram.png]]
+
+
+If two bits got flipped, you cant really retrieve it, but you can at least check if its corrupted. That where the bast bit comes in: the global parity bit. It counts all the 1's in the byte and changes so that he sum is even. So just even parity.
+
+Ignore the global parity bit until you finished looking at the 3 Parity bits. First you check the 3 parity bits. If there is a single error, it can be corrected. If, after fixing the apparent flipped bit, we check with the global parity bit. If that gives us an error, the data is corrupted. 
+
+
+** Creating Hamming Code for Eight Data bits
+
+See [[id:9c59ecc5-a519-4925-b16d-7f08a51ffb01][Error Syndrome]] for the basics
+
+| S_3 | S_2 | S_1 | S_0 | Error    |
+|----+----+----+----+----------|
+|  0 |  0 |  0 |  0 | No Error |
+|  0 |  0 |  0 |  1 | P_0       |
+|  0 |  0 |  1 |  0 | P_1       |
+|  0 |  0 |  1 |  1 | D_0       |
+|  0 |  1 |  0 |  0 | P_2       |
+|  0 |  1 |  0 |  1 | D_1       |
+|  0 |  1 |  1 |  0 | D_2       |
+|  0 |  1 |  1 |  1 | D_3       |
+|  1 |  0 |  0 |  0 | P_3       |
+|  1 |  0 |  0 |  1 | D_4       |
+|  1 |  0 |  1 |  0 | D_5       |
+|  1 |  0 |  1 |  1 | D_6       |
+|  1 |  1 |  0 |  0 | D_7       |
+|  1 |  1 |  0 |  1 |          |
+|  1 |  1 |  1 |  0 |          |
+|  1 |  1 |  1 |  1 |          |
+
+Where only 1 bit is a one, the corrosponding Parity bit was flipped.
+We then just fill with D_0 - D_7 in order (8 Databits).
+
+The Parity for each P_1 to P_2 is made by XOR-ing all the D_n's where the S_n bit is 1.
+So for P_0, its all the nibbles where the S_0 is 1.
+
+P_0 = D_0 \oplus D_1 \oplus D_3 \oplus D_4 \oplus D_6
+P_1 = D_0 \oplus D_2 \oplus D_3 \oplus D_5 \oplus D_6
+P_2 = D_1 \oplus D_2 \oplus D_3 \oplus D_7
+P_3 = D_3 \oplus D_4 \oplus D_5 \oplus D_6 \oplus D_7
+
+So now we can now check for errors. So lets say D_5 Changed.
+
+P_0 doesnt have D_5, so S_0 = 0
+However its a member of P_1. This means P_{1}\prime will be different from P_1
+\to S_1 = 1 (Since its XOR of P_1 and P_{1}\prime)
+
+and so on. So we get:
+
+S_0 = 0
+S_1 = 1
+S_2 = 0
+S_3 = 1
+
+If we then look into our table we see that 1010 is the Pattern for D_5 being flipped (Since we didnt actually know that before).
+
+*** Calculating Parity to Data bits count
+Given N Data Bits and M parity bits
+
+Cases (SEC / DED)
+ * One no error case
+ * M parity error cases
+ * N data bit error cases
+ * + 1 global parity bit (for DED)
+
+This gives us
+
+2^m \ge all cases
+2^m \ge 1 + M + N
+
+SEC example: 
+ * 2^4 \ge 1 + 4 + N
+ * 16 \ge 1 + 4 + N
+ * \to N \le 11
+
+ * 2^5 \ge 1 + 5 + N
+ * 32 \ge 1 + 5 + N
+ * \to N \le 26
+
+DED example (with global parity bit)
+ * 2^6 \ge 1 + 6 + 1 + N
+ * 64 \ge 1 + 6 + 1 + N
+ * \to N \le 56
+

@@ -1,0 +1,34 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       f85b11fb-0698-41e8-ae42-ea170e1694e7
+:END:
+#+title: Active Low Decoders
+#+filetags: :@computerEngineering:@boat:
+* Active Low Decoders
+
+[[id:fdaf86b9-6e08-488f-bc51-e9d6a6ef05d9][Active Low]]
+
+An example of this is the Active low AND Gate, which is just a NAND gate. Since the AND gate is used to identify unique siuations, you can get certain unique outputs like so:
+
+
+| A | B | A \cdot \not B | \not(A \cdot \not B) |
+|---+---+---------+------------|
+| 0 | 0 |       0 |          1 |
+| 0 | 1 |       0 |          1 |
+| 1 | 0 |       1 |          0 |
+| 1 | 1 |       0 |          1 |
+
+You can just choose which input you want to isolate. This is A decoder:
+
+A = 1
+B = 1
+C = 0
+D = 0
+
+\( X = A \cdot B \cdot \overline{C} \cdot \overline{D} \)
+
+[[file:/home/steve/OrgVault/images/computerEngineering/three_var_xor_gate.png]]
+
+
+If you have more inputs, you can use the [[id:d9ccb2a9-7a6e-4c44-8ca8-6710a126d6b0][Product-of-Sums Expressions]] to get a more complex active low decoder

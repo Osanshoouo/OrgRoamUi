@@ -1,0 +1,26 @@
+:PROPERTIES:
+:NOTE_LEVEL: 2
+:ROAM_ALIASES: 
+:ID:       9370137c-47c8-49ab-a3c5-033944e0a7ad
+:END:
+#+title: Parity
+#+filetags: :@computerEngineering:@boat:
+* Parity
+Parity is an important tool for error detection and connection. 
+A lot of thing can change data. Even just electromagnetic waves in the air.
+
+Setting one bit of Parity for error checking. For example using ASCII. Since it uses 7 bits but sends a byte, you can use the left over bit for Parity.
+
+However Parity cannot detect an error if an even number of bitflips occour.
+
+* Types of Parity
+
+** Error Checking
+Odd:  Sum of 1's in data  + parity is always odd (output of NXOR on all inputs)
+Even: Sum of 1's in data + parity is always even (output of XOR on all inputs)
+
+** Not useful for error checking
+Mark: Parity = 1
+Space: Parity = 0
+
+

@@ -1,0 +1,10 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       29764c21-a244-4f26-bd64-fe912c6332e6
+:END:
+#+title: Processor
+#+filetags: :@computerEngineering:@boat:
+* Processor
+
+

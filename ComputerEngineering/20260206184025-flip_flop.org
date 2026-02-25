@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       3de89e57-1f05-4903-89bf-beeb225e3b52
+:END:
+#+title: Flip-Flop
+#+filetags: :@computerEngineering:@boat:
+

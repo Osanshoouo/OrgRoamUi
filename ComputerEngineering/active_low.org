@@ -1,0 +1,15 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       fdaf86b9-6e08-488f-bc51-e9d6a6ef05d9
+:END:
+#+title: Active Low
+#+filetags: :@computerEngineering:@boat:
+* Active Low
+
+Active state is the logic 0
+Idle state is the logic 1
+
+
+[[id:f85b11fb-0698-41e8-ae42-ea170e1694e7][Active Low Decoders]]
+

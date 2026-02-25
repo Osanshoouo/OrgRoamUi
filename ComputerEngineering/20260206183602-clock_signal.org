@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       368f2e2d-bdb3-4d29-b05b-324702792c63
+:END:
+#+title: Clock Signal
+#+filetags: :@computerEngineering:@boat:
+

@@ -1,0 +1,9 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       a7931ebc-e9ec-428b-b081-03ba37b971b9
+:END:
+#+title: Converting Numbers between Bases
+#+filetags: :@computerEngineering:@boat:
+* Converting Numbers between Bases
+

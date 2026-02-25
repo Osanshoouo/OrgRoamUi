@@ -1,0 +1,37 @@
+:PROPERTIES:
+:NOTE_LEVEL: 2
+:ROAM_ALIASES: CRC
+:ID:       a3bc1df4-1bb6-4131-937a-9587d1db62a8
+:END:
+#+title: Cyclic Redundancy Checks
+#+filetags: :@computerEngineering:@boat:
+* Cyclic Redundancy Checks
+
+The further left the bit flip is, the larger the effect of the bitflip is
+Using modulo as a basic [[id:ddfbb3b9-379a-459c-bf04-d051bc00f799][Hash Function]].
+
+
+
+ASCII:                  Hello!
+Binary:                 01001000 001100101 01101100 01101100 01101111 00100001
+as Integer:             79.600.447.942.433
+                        mod 147 = 131
+                        
+Double BitFlip in "H":  83.981.314.584.353
+                        mod 147 = 74
+
+So thats much less of a jump than about 4.000.000.000.000 with just the integer value.            
+
+So how do you do mod in your computer. You could subtract 147 over and over again until there is just a Rest left. This however is slow an impossible for longer strings or values. Another Idea is long-divison. However the problem there is that the borrows would grab up higher up the chain, causing a lot of chain reaction steps.
+
+What you could do however is borrow-less subtraction.
+
+So you do subtraction and act as if you could borrow, but never actually write down the borrow. So if you had 100_2 - 111_2, then you would just calculate.
+
+ 100
+-111
+ 011
+
+This will do exactly the same as the bitwise XOR. However its important that both numbers have 1 in the MSB position. That is because you are looking to make the MSB 0. That is since you want to "take out the second number "out of" the first.
+
+

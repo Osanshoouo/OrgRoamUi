@@ -1,0 +1,37 @@
+:PROPERTIES:
+:ID:       aaef1033-70ff-4d8f-867a-2514b0848717
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: BCD
+:END:
+#+title: Binary-Encoded Decimal
+#+filetags: :@computerEngineering:@boat:
+
+A lot of fractions can not be accurately represented in [[id:eb1a3e89-07ad-437b-aa12-e501af655878][Unsigned Binary]].
+
+
+** Packed BCD (one nibble per digit)
+Binary Byte, where one Nibble is the 10's playe and the other is the 1's place. So one byte can represent 2 digits, so up to 99. However its very accurate and easy for humans to translate.
+
+There are different varitions of BCD. One use of BCD is time for example. Since all the values for seconds, minutes, hours, days, weeks and months are all less than 99. This also makes it easy to convert these values.
+
+*** Example of BCD:
+94_10 = 01011110_2 = 1001 0100_BCD
+
+*** Table:
+Packed BCD is postfix in its + and - notation, as can be seen below:
+
+| Binary Nibble | BCD value |
+|---------------+-----------|
+|          0000 |         0 |
+|          0001 |         1 |
+|          0010 |         2 |
+|          0011 |         3 |
+|          0100 |         4 |
+|          0101 |         5 |
+|          0110 |         6 |
+|          0111 |         7 |
+|          1000 |         8 |
+|          1001 |         9 |
+|          1100 |         + |
+|          1101 |         - |
+

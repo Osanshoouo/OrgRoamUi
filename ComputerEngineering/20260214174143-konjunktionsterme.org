@@ -1,0 +1,7 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ID:       de41f3b6-0ea3-4497-9be1-932572f05089
+:END:
+#+title: Konjunktionsterme
+#+filetags: :@computerEngineering:@boat:
+

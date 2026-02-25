@@ -1,0 +1,41 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       93faea5e-d453-42e5-8c6c-3612440d288a
+:END:
+#+title: Bit Arithmatics
+#+filetags: :@computerEngineering:@boat:
+* Bit Arithmatics
+
+ * [[id:4159a8ec-edc1-4c14-a9b0-0188281c0807][Bit Multipliation]]
+ * [[id:ebf6e869-2574-4dc2-9d49-b421f365188e][Bit Division]]
+
+   
+** Bit Shifting as Multipliation and Division
+Multiplication
+
+3   = 0000 0011
+6   = 0000 0110
+12  = 0000 1100
+24  = 0001 1000
+48  = 0011 0000
+96  = 0110 0000
+192 = 1100 0000
+
+This just moves the number to the left. This is a way to do multiplication with a left and right bit-shift.
+
+So if you want
+a = a * 16;
+
+then the that is the same as
+a=a<<4;
+
+Division
+
+Divigion is just the other way around
+b = b/8;
+
+is the same as
+b= b>>3;
+
+this is exactly what enables [[id:a7931ebc-e9ec-428b-b081-03ba37b971b9][Converting Numbers between Bases]]

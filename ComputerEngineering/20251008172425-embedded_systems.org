@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       8203dba6-1d2c-44d9-aae5-d638ec66a858
+:NOTE_LEVEL: 1
+:END:
+#+title: Embedded Systems
+#+filetags: :@computerEngineering:@boat:
+

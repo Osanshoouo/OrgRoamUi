@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       9c942c93-f964-4daa-9ed4-d56e0da115b9
+:END:
+#+title: Shift Mode
+#+filetags: :@computerEngineering:@boat:
+

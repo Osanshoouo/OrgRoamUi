@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       1ab99acd-2778-4668-990a-e5bb4b39a35d
+:END:
+#+title: Serial Input
+#+filetags: :@computerEngineering:@boat:
+

@@ -1,0 +1,92 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       d9ccb2a9-7a6e-4c44-8ca8-6710a126d6b0
+:END:
+#+title: Product-of-Sums Expressions
+#+filetags: :@computerEngineering:@boat:
+* Product-of-Sums Expression
+
+Is the OR-Gate version of [[id:1553ba21-3f8a-4341-a29c-1afe1d799d64][Sum-Of-Products Expressions]]. Instead of [[id:39bcc409-fcf9-4343-8617-d4eb814dcb93][Active High]] circuits, you can use the Product of Sums for [[id:fdaf86b9-6e08-488f-bc51-e9d6a6ef05d9][Active Low]] circuits. For example for [[id:f85b11fb-0698-41e8-ae42-ea170e1694e7][Active Low Decoders]].
+
+Moving a single 0 Output:
+
+| A | B | C | X = A+B+C | X = \not A+B+C |
+|---+---+---+-----------+-------------|
+| 0 | 0 | 0 |         0 |           1 |
+| 0 | 0 | 1 |         1 |           1 |
+| 0 | 1 | 0 |         1 |           1 |
+| 0 | 1 | 1 |         1 |           0 |
+| 1 | 0 | 0 |         1 |           1 |
+| 1 | 0 | 1 |         1 |           1 |
+| 1 | 1 | 0 |         1 |           1 |
+| 1 | 1 | 1 |         1 |           1 |
+
+Truthtable: only true if there are exactly 2 1's or 0's next to each other. The x_0 to x_3 are isolating all of these ones. Since you can create an AND gate to get outputs that are only true / 1 for a single combination, you can now do that for every x.
+
+| A | B | C |   | x |   | x_0 | x_1 | x_2 | x_3 |
+|---+---+---+---+---+---+----+----+----+----|
+| 0 | 0 | 0 |   | 0 |   |  0 |  1 |  1 |  1 |
+| 0 | 0 | 1 |   | 1 |   |  1 |  1 |  1 |  1 |
+| 0 | 1 | 0 |   | 0 |   |  1 |  0 |  1 |  1 |
+| 0 | 1 | 1 |   | 1 |   |  1 |  1 |  1 |  1 |
+| 1 | 0 | 0 |   | 1 |   |  1 |  1 |  1 |  1 |
+| 1 | 0 | 1 |   | 0 |   |  1 |  1 |  0 |  1 |
+| 1 | 1 | 0 |   | 1 |   |  1 |  1 |  1 |  1 |
+| 1 | 1 | 1 |   | 0 |   |  1 |  1 |  1 |  0 |
+
+
+\begin{math}
+\( X_0 &= A + B+ C  \) \\
+\( X_1 &= A + \overline{B} + C \) \\
+\( X_2 &= \overline{A} + B +\overline{C}\) \\
+\( X_3 &= \overline{A} + \overline{B} +\overline{C} \) \\
+\end{math}
+
+As the name implies, you then take the Product of these Sums (and simplify)
+
+\begin{displaymath}
+
+\begin{equation*}
+ X_0 \cdot X_{1} \cdot X_{2} \cdot X_{3} \\
+\end{equation*}
+
+\begin{equation*}
+X_0 &= A + B+ C \cdot A + \overline{B} + C \cdot \overline{A} + B \\
++\overline{C} \cdot \overline{A} + \overline{B} +\overline{C}
+\end{equation*}
+\\
+\text {This implifies the same way as the example in the SoP}
+\begin{align*}
+X = \overline{A}C + A \overline{C}
+\end{align*}
+
+\end{displaymath}
+
+** Converting to Truthtable
+
+\begin{equation*}
+X_0 &= (A + B + \overline{C}) \cdot (\overline{A} + B) \cdot (\overline{A} + \overline{B} +\overline{C})
+\end{equation*}
+
+Check where the value ends up 0 in each sum. These are the places where the 0 will be in the Product (since a single 0 in an AND Gates makes the output negative)
+
+| A | B | C |   | Output (AND of products) | Sum 1 | Sum 2 | Sum 3 |
+|---+---+---+---+--------------------------+-------+-------+-------|
+| 0 | 0 | 0 |   |                        1 |     1 |     1 |     1 |
+| 0 | 0 | 1 |   |                        0 |     0 |     1 |     1 |
+| 0 | 1 | 0 |   |                        1 |     1 |     1 |     1 |
+| 0 | 1 | 1 |   |                        1 |     1 |     1 |     1 |
+| 1 | 0 | 0 |   |                        0 |     1 |     0 |     1 |
+| 1 | 0 | 1 |   |                        0 |     1 |     0 |     1 |
+| 1 | 1 | 0 |   |                        1 |     1 |     1 |     1 |
+| 1 | 1 | 1 |   |                        0 |     1 |     1 |     0 |
+
+
+
+*** The Circuit:
+[[file:/home/steve/OrgVault/images/computerEngineering/product_of_sums_with_and_gate_example.png]]
+
+*** Applying DeMorgan's Theorem:
+[[file:/home/steve/OrgVault/images/computerEngineering/product_of_sums_with_nor_gate_example.png]]
+

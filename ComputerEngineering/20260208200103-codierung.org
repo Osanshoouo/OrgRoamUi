@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       beafd53c-3794-4868-bd4f-7621e2a0612b
+:NOTE_LEVEL: 1
+:NOTE_LEVEL: 1
+:NOTE_LEVEL: 1
+:END:
+#+title: Codierung
+#+filetags: :@computerEngineering:@boat:
+

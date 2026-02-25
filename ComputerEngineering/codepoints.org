@@ -1,0 +1,12 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       dbc0fe62-fbb7-460c-b81c-cddc6fa24dfd
+:END:
+#+title: Codepoints
+#+filetags: :@computerEngineering:@boat:
+* Codepoints
+
+ * [[id:5f22e595-1c93-4230-bc5f-f7e900d93e71][Unicode]]
+ * [[id:08fa36a0-46b7-422e-8137-e1377c7b552c][ASCII Character Encoding]]
+ * [[id:bbfff7ce-5d24-4426-8a08-113e5f2a2e5a][UTF-8]]

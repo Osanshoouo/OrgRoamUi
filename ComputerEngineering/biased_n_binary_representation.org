@@ -1,0 +1,31 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: Offset-N notation
+:ID:       0ccaa3a2-8f5d-4ffd-8e43-76204facbb6c
+:END:
+#+title: Biased-N Binary Representation
+#+filetags: :@computerEngineering:@boat:
+
+* Biased-N Binary Representation
+
+When comparing the size of binary numbers, then it of course depends on which representation you are looking at. Since this
+
+
+The base idea is just shifting the whole number line down by -N. So range changes from -N to 2^n-1-N.
+
+** Converting Decimal to Biased-128 (8 bits)
+0000.0000 = -N
+1111.1111 = 2^n-1-N.
+
+
+1. add N to decimal value
+2. Convert as if unsigned
+
+alternatively:
+1. turn the number into binary
+2. add N (127) to it
+
+   
+To do the reverse, you just:
+1. Convert to decimal as if unsigned
+2. Subtract N

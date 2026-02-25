@@ -1,0 +1,20 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       45ebf03e-b4d9-4753-848b-e0c23bc6a3e1
+:END:
+#+title: Fixed Point Notation
+#+filetags: :@computerEngineering:@boat:
+* Fixed Point Notation
+** Basics
+
+If you have a number N, then the further you go left from the decimal dot, the higher the exponents grow (N^1 + N^2 + N^3...). If you go to the right then the get smaller and smaller: N^-1 + N^-2...
+
+The same is the case for Binary:
+
+2^3+2^2+2^1+2^0+2^-1+2^-2+2^-3...
+
+which are the same as
+
+\( \frac{1}{2^{}^{1}} + \frac{1}{2^{2}^{}^{}} + \frac{1}{2^{3}^{}^{}}\dots \)
+

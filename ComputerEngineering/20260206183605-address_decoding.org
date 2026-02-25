@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       d15e649d-4d9c-43ab-a5bf-0ea3a49196d1
+:END:
+#+title: Address Decoding
+#+filetags: :@computerEngineering:@boat:
+

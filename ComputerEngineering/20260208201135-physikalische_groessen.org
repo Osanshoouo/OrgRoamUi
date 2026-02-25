@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       0069eac9-224f-45f7-958d-a2c1bcaf408a
+:NOTE_LEVEL: 1
+:END:
+#+title: Physikalische Groessen
+#+filetags: :@computerEngineering:@boat:
+

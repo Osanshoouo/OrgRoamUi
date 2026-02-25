@@ -1,0 +1,59 @@
+:PROPERTIES:
+:ID:       f3637cc6-88b9-49a6-9652-88fe2f2ace44
+:NOTE_LEVEL: 2
+:END:
+#+title: Digital vs Analog
+#+filetags: :@computerEngineering:@boat:
+
+* Digital
+Finite amount of values
+
+
+
+diskrete werte 
+
+digitus fuer finger
+
+beschraenkt auf bestimmte (regelmaessige zeitpunkte)
+
+
+diskret vs kontinuierlich:
+
+[[file:/home/steve/OrgVault/images/diskret_vs_kontinuierlich.png]]
+
+
+Alle möglichen Werte müssen durch physikalische Basisgrößen
+repräsentiert werden.
+
+Wird der Wertebereich digitaler Größen auf zwei beschränkt
+spricht man von binären Werten (binäre Digitaltechnik)
+
+[[id:3a2bde63-62ec-4ce9-bbbf-4ee8d1ad282a][Binary]]
+
+* Analog
+
+Given a continous waveform, of an reallife signal, then this signal has infinite amount of data at every given point. However computers cant actually store infinite data, let anole work with it. This is where [[id:6891030f-faa2-4cb7-a4e0-20e6add50ed7][Analog to Digital Conversion]] comes in.
+
+
+
+** Aufzeichnung der Eindrücke
+– „es wird kälter“
+– „der Stein fällt schneller“
+
+** Zeit-kontinuierlicher Erfahrungsbereich
+– Vergleich des neuen Ist-Wertes mit dem alten Ist-Wert
+– Zeitdifferenz zwischen Neu und Alt ist „beliebig“ klein
+
+** Vorteil:
+anschaulich
+
+** Nachteil:
+exakte Wertbestimmung oft ungenau
+
+* resources:
+
+ * [[https://www.youtube.com/watch?v=GVsUOuSjvcg][veritasium video 1]]
+ * [[https://www.youtube.com/watch?v=IgF3OX8nT0w&pp=ygUadmVyaXRhc2l1bSBhbmFsb2cgY29tcHV0ZXLSBwkJAwoBhyohjO8%3D][veritasium video 2]]
+
+
+ 

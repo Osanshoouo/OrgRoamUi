@@ -1,0 +1,11 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ID:       1c9ceecf-7b30-416b-9bdb-8205672e1a8d
+:END:
+#+title: Primimplikanten
+#+filetags: :@computerEngineering:@boat:
+
+
+Als Primterm oder Primimplikant einer [[id:92d78101-bd33-4618-a71d-c1e3f76e9805][Booleschen Funktion]] bezeichnet man einen [[id:abb9d4a9-d2ed-4abf-a008-06158c5928e1][Implikanten]] minimaler Länge, der also durch weiteres Vereinfachen oder Weglassen von Buchstaben kein Implikant mehr wäre.
+
+Der Begriff wird bei der Minimierung von [[id:81661bb0-1662-4eaf-a7ad-bcc598d3f9fb][Schaltnetzen]], z. B. mit [[id:f9206309-2668-4d9f-8fd4-0d4035150d3b][KV-Diagrammen]], verwendet. Er bezieht sich dann in der Regel auf [[id:de41f3b6-0ea3-4497-9be1-932572f05089][Konjunktionsterme]] in einer [[id:dd6a67ec-2801-41ea-a57f-7621685260e3][Disjunktion]] von Konjunktionstermen bzw. [[id:cc998d1a-5667-463f-bc42-953533345828][Minterme]] in einer [[id:73f5d668-2d82-4d7a-b035-0a56d8ec302b][DNF]]. Unter der Länge eines booleschen Terms wird in diesem Zusammenhang die Anzahl der enthaltenen [[id:3a96133e-6003-49c7-94bf-faa8b5d53de1][Konjunktionen]] und Disjunktionen verstanden, wobei innerhalb eines Konjunktionsterms dabei freilich nur Konjunktionen interessant sind. 

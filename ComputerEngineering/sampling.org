@@ -1,0 +1,30 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       0033ac3d-9768-4862-a9f9-babf178edf5a
+:END:
+#+title: Sampling
+#+filetags: :@computerEngineering:@boat:
+
+* Sampling
+
+Converting audio to digital for examples takes a certain amount of samples. The sampling rate is the number of samples per Second and is given in Hertz.
+
+Its the X axis of the frequency to time graph.
+Higher Frequencies (higher pitches) are of course lower frequency, so a lower sampling rate leaves out more of these frequencies.
+
+
+Example:
+
+sine wave at 440HZ. If you sample at exactly this frequency, you will just loose the sound, since youll get just a straight line. This is called Aliasing. If you were to use 500HZ for example, the resulting wave might even add frequencies that werent in the original data.
+
+An example of this is Wheels looking like they are going backwards. This happens if the wheel is spiing at a multiple of the sampling rate, then it appears to have stopped. If its faster then It might appear to go backward.
+
+[[id:aad9efc8-1f18-4a85-91f9-e2618252ecff][Nyquist Theorem]]
+
+Quantization noise is the sawtooth line that is created by sampling. This introduces Quantization noise, which can be fixed by increasing the bitdepth, as the makes the sawtooth "triangles" smaller and smaller.
+
+
+Depending
+
+Rounding Errors on

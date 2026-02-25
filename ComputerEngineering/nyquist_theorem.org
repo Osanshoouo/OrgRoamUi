@@ -1,0 +1,14 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       aad9efc8-1f18-4a85-91f9-e2618252ecff
+:END:
+#+title: Nyquist Theorem
+#+filetags: :@computerEngineering:@boat:
+* Nyquist Theorem
+
+Sampling rate > 2x fastest frequency we want to capture
++ Filtering out everything above the frequency you want to capturing.
+
+
+

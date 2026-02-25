@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       e3eb38df-3621-4a0a-9b85-dfb682e43af6
+:NOTE_LEVEL: 2
+:ROAM_REFS: https://en.wikipedia.org/wiki/Adder_(electronics)
+:END:
+#+title: Adder
+#+filetags: :@computerEngineering:@boat:
+
+As the name implies, the adder is a [[id:e1db387e-c5fa-4916-a874-fd68bc128635][Digital Circuit]] that performs addition of numbers. Adders are used in [[id:09542896-4459-40ad-a5e2-8ade7c7089e8][Arithmetic Logic Units]] (ALUs). Adders can be constructed for more than binary, for example for [[id:aaef1033-70ff-4d8f-867a-2514b0848717][Binary-Encoded Decimal]] and [[id:c7643c05-18f5-4788-a488-2c4f876ec6cb][Excess-3]].
+
+** Half Adder
+the half adder adds two single binary digits and has two outputs, the sum and the carry. With the carry representing the overflow. The half adder is made up of an XOR and an AND Gate:
+
+[[file:/home/steve/OrgVault/images/computerEnginnering/Half_Adder.png]]
+
+It can also be implemented with 5 NAND gates:
+[[file:/home/steve/OrgVault/images/computerEnginnering/Half_adder_using_NAND_gates_only.jpg]]
+
+** Full adder
+the full adder adds binary numbers and accounats for values carried in as well as out. A one-bit full-adder adds three one-bit numbers. Two of them being operands and the third being the Carry carried in from the previous less-significatn stage.
+
+The cirucit produces a two-bit output. The output sum equals 2C_Out + S. The full adder is usually a component in a cascade of adders, which add 8, 16, 32, etc. bit binary numbers.
+
+There are many implementations. The most common one is with:
+\({\displaystyle S=A\oplus B\oplus C_{in}}\)
+
+\(C o u t = ( A ⋅ B ) + ( C i n ⋅ ( A ⊕ B ) ) {\displaystyle C_{out}=(A\cdot B)+(C_{in}\cdot (A\oplus B))} \)
+
+The above expressions for S and C_in can be derived from using a [[id:8e46030b-6086-4e1b-9b64-ea4899a1c832][Karnaugh Map]] to simplify the truth table. 
+
+[[file:/home/steve/OrgVault/images/computerEnginnering/Full-adder_logic_diagram.png]]

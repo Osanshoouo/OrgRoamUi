@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       a47deef9-40dc-409b-b82a-108858a779ca
+:NOTE_LEVEL: 1
+:END:
+#+title: Steuerwerke
+#+filetags: :@computerEngineering:@boat:
+

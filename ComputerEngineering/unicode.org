@@ -1,0 +1,22 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: Unicode Code Points
+:ID:       5f22e595-1c93-4230-bc5f-f7e900d93e71
+:END:
+#+title: Unicode
+#+filetags: :@computerEngineering:@boat:
+
+* Unicode Code Points
+Unicode Code points, or rather Unicode itself is not actual Encoding. Its just the one-to-one mapping of symbols to Identifiers / binary patters.
+
+
+0 \to 0x10FFFF different Code Points to assing.
+
+
+They are usually represented like so:
+U+hex_value
+
+for example U+0041 \to 'A'
+
+
+An example of an Encoding Scheme is [[id:bbfff7ce-5d24-4426-8a08-113e5f2a2e5a][UTF-8]].

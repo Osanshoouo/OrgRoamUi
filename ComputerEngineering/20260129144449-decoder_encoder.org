@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       4c606852-8854-4f21-a652-122ef0ae8e5c
+:NOTE_LEVEL: 1
+:END:
+#+title: Decoder & Encoder
+#+filetags: :@computerEngineering:@boat:
+

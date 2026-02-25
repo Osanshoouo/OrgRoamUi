@@ -1,0 +1,9 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       ebf6e869-2574-4dc2-9d49-b421f365188e
+:END:
+#+title: Bit Division
+#+filetags: :@computerEngineering:@boat:
+* Bit Division
+

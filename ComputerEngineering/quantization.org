@@ -1,0 +1,11 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       74640f81-3082-4e30-8867-4a32c5720691
+:END:
+#+title: Quantization
+#+filetags: :@computerEngineering:@boat:
+
+* Quantization
+
+Sawtooth wave created by the Sampling process.

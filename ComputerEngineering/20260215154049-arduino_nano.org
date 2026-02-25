@@ -1,0 +1,8 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ID:       44c5597e-cfd5-4e88-944e-5d0176d9fc0e
+:END:
+#+title: Arduino Nano
+#+filetags: :@computerEngineering:
+
+

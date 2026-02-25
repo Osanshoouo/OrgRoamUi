@@ -1,0 +1,7 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ID:       dd6a67ec-2801-41ea-a57f-7621685260e3
+:END:
+#+title: Disjunktion
+#+filetags: :@computerEngineering:@boat:
+

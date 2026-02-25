@@ -1,0 +1,31 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: D Flip-Flop Timer Circuit
+:ID:       522a7681-44dc-4b01-a44c-71ea83770406
+:END:
+#+title: D Flip-Flop Binary Counter
+#+filetags: :@computerEngineering:@boat:
+#+LATEX_HEADER: \usepackage{tikz-timing}
+#+LATEX_HEADER: \usepackage{circuitikz}
+* D Flip-Flop Binary Counter/Timer Circuit
+
+
+
+\begin{tikztimingtable}[timing/draw grid]
+{Frequency:} & [green,timing/slope=0] 16{0.5L0.5H} \\
+{Q$_{0}$:} & [-,timing/slope=0]8{1L1H} \\
+{Q_{$_{2}$}:} & [-,timing/slope=0]4{2L2H} \\
+{Q$_{3}$:} & [-,timing/slope=0]2{4L4H} \\
+\end{tikztimingtable}
+
+
+If you write the binary values of each Q, you get
+
+Q_0 = 0101 0101 0101 0101
+Q_1 = 0011 0011 0011 0011
+Q_2 = 0000 1111 0000 1111
+Q_3 = 0000 0000 1111 1111
+
+If you look at the colums and go through them left to right, you can see that we are actually counting in binary here. Which is where the name comes from. This is how Operting Systems / [[id:29764c21-a244-4f26-bd64-fe912c6332e6][Processors]] count this way to manage time. An ARM32 processor for example has 32 bits to count this way. The same goes for waiting for time spans to elapse. Another Example is a [[id:1ce7764f-dd0a-42f9-8b8b-312b1c8069ad][Watchdog Timer]].
+
+

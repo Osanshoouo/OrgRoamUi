@@ -1,0 +1,22 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       0f284dec-e260-4fbd-b41e-efaf53199f8b
+:END:
+#+title: Overflow in Binary Integer Addition
+#+filetags: :@computerEngineering:@boat:
+* Overflow in Binary Integer Addition
+
+
+** Unsigned Binary
+Overflow in unsigned Binary is simple. You just go out of the range of representable numbers. If you got 7 bits and try to add 1 to 127, then you get a carry / overflow into the next higher bit. This means that if the computer doenst check for that, it would go from 127 to 0.
+
+** Twos complement
+Here its a bit more interesting. If an overflow occours, the means that you went over the threshhold of positive numbers into negative and vice versa. Lets say you once again have 7 bits and 1 signbit. If you add 1 to 127, then you will get -127.
+
+In binary that would be 0111.1111 + 0000.0001 = 1000.0000 - which is -127 in two's complement. (Grouping as nibbles for ease of reading - no extra meaning).
+
+The same of course happens when adding 1 to -1, giving you 0:
+1111.1111 + 0000.0001. Which isnt really an overflow, its just correct addition in this case.
+
+[[id:6a385b97-10e5-412e-8670-cb51ff1127f7][Overflow rules for Two's Complement]]

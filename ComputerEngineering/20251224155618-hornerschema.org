@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       45a94c6c-8cf0-4b8e-bdee-c92f0b0444bb
+:NOTE_LEVEL: 1
+:END:
+#+title: Hornerschema
+#+filetags: :@computerEngineering:@boat:
+
+
+Verfahren abgeleitet vom Horner Schema
+– Wiederholte Multiplikation mit der Basis des Zielsystems
+[[id:cb495f9b-ccec-45db-8024-7de4e7f51058][Konvertierung zwischen Zahlensystemen]]

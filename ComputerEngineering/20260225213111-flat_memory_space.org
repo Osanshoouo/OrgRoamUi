@@ -1,0 +1,9 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       264839b7-fa63-4788-8cf9-ed95cd810961
+:END:
+#+title: Flat Memory Space
+#+filetags: :@computerEngineering:@boat:
+* Flat Memory Space
+

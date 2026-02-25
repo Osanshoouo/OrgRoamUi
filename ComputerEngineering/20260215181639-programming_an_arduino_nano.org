@@ -1,0 +1,69 @@
+:PROPERTIES:
+:ID:       53f7ba92-3c26-4321-8f2e-0e3a864522d1
+:END:
+#+title: Programming an Arduino Nano
+
+
+* Programming an Arduino Nano              :@project:@c:@computerEngineering:
+
+** Arduino setup
+*** setting up everything for the Arduino Nano
+
+:LOGBOOK:
+CLOCK: [2026-02-15 Sun 15:41]--[2026-02-15 Sun 16:10] =>  0:29
+:END:
+
+*** soldering arduino 
+:LOGBOOK:
+CLOCK: [2026-02-16 Mon 15:20]--[2026-02-16 Mon 15:55] =>  0:35
+CLOCK: [2026-02-15 Sun 16:05]--[2026-02-15 Sun 16:33] =>  0:28
+:END:
+
+*** setting up ide
+:LOGBOOK:
+CLOCK: [2026-02-15 Sun 16:33]--[2026-02-15 Sun 17:10] =>  0:37
+:END:
+
+
+** First led tests
+:LOGBOOK:
+CLOCK: [2026-02-15 Sun 17:10]--[2026-02-15 Sun 18:05] =>  0:55
+:END:
+
+
+** Building logic gates
+
+*** Arduino AND, OR and XOR Gates
+:LOGBOOK:
+CLOCK: [2026-02-15 Sun 18:47]--[2026-02-15 Sun 19:28] =>  0:41
+:END:
+
+*** Poteniometer in and out
+:LOGBOOK:
+CLOCK: [2026-02-15 Sun 19:28]--[2026-02-15 Sun 20:05] =>  0:37
+:END:
+
+** Playing Vento Aureo on Buzzer
+:LOGBOOK:
+CLOCK: [2026-02-16 Mon 07:23]--[2026-02-16 Mon 07:57] =>  0:34
+:END:
+
+** Looking for ICs to build with                             :@organisation:
+:LOGBOOK:
+CLOCK: [2026-02-16 Mon 07:57]--[2026-02-16 Mon 08:11] =>  0:14
+:END:
+
+** Arduino Timer with music
+:LOGBOOK:
+CLOCK: [2026-02-16 Mon 13:37]--[2026-02-16 Mon 14:40] =>  1:03
+:END:
+
+** Playing around with circuits
+:LOGBOOK:
+CLOCK: [2026-02-16 Mon 16:02]--[2026-02-16 Mon 16:08] =>  0:06
+CLOCK: [2026-02-16 Mon 14:40]--[2026-02-16 Mon 15:20] =>  0:40
+:END:
+
+** Counter with LED lights
+
+I can just use decimal to binary conversion in order to get my counting lights on the breadboard.

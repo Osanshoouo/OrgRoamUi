@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       b778be25-eeb8-4e39-b347-ff34e8401e61
+:NOTE_LEVEL: 1
+:END:
+#+title: The Organic Chemistry Tutor
+#+filetags: :@computerEngineering:@boat:
+
+* The Organic Chemistry Tutor                                          :@gti:
+** Logic Gates, Truth Tables, Boolean Algebra AND, OR, NOT, NAND & NOR
+:LOGBOOK:
+CLOCK: [2025-12-24 Wed 15:44]--[2025-12-24 Wed 15:53] =>  0:09
+:END:
+
+Buffer gate
+
+Functions to Block Diagrams and vice versa
+And Gate is multiplication and Or gate is addition
+
+SOP - sum of products expression
+
+literals - x,y,z (variables)
+

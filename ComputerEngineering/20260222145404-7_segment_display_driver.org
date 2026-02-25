@@ -1,0 +1,9 @@
+:PROPERTIES:
+:NOTE_LEVEL: 1
+:ROAM_ALIASES: 
+:ID:       80e29d90-e572-44b2-82f3-75e797115bd4
+:END:
+#+title: 7-Segment Display Driver
+#+filetags: :@computerEngineering:@boat:
+* 7-Segment Display Driver
+
